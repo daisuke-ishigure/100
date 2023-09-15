@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP:wght@700&family=Source+Code+Pro:wght@800&family=Yuji+Hentaigana+Akebono&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 16px;
+
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100vw;
+  height: auto;
+  background-image: url(../img/mat.webp);
+}
+
+img {
+  max-width: 100%;
+}
+
+#themeSelector,
+#jsonSelector {
+  font-size: 20px;
+  width: 443px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* カードの背景画像 */
+.flip-card-back,
+.flip-card-front {
+  background-image: url("../img/card.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 443px;
+  height: 621px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 443px;
+  height: 621px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+/* 正面と背面の位置合わせ */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 16px 1px #333;
+  transform: translate3d(0, 0, 0);
+}
+
+/* 垂直方向に反転する */
+.flip {
+  transform: rotateY(180deg);
+}
+
+/* 正面と背面の位置合わせ */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 背面 */
+.flip-card-back {
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden; /* プレフィックスを追加 */
+}
+
+/* カードの裏面に擬似要素を追加 */
+.flip-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* 背景を透明に */
+  pointer-events: none; /* イベントを透過 */
+}
+
+/* 正面カードのテキストが隠れるようにz-indexを設定 */
+.flip-card-front {
+  z-index: 2;
+}
+
+
+
+
+#containerFront,
+#containerBack {
+  width: 100%;
+  height: 100%;
+  padding: 12% 10% 5%;
+  margin: 0 auto;
+}
+
+#containerFront p,
+#containerBack p {
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  line-height: 2em;
+  writing-mode: vertical-rl;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  animation: funwari 1s;
+}
+
+#containerBack p {
+  font-family: "Noto Sans JP", sans-serif;
+  writing-mode: inherit;
+  line-height: 1.7em;
+  font-size: 1.5rem;
+  position: relative;
+  align-items: start;
+  transform: translateY(4rem);
+}
+
+#containerBack p::before {
+  content: "意味";
+  transform: translateY(-4rem);
+  width: 20%;
+  height: 7%;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #ff744d;
+  border-radius: 6px;
+  padding: 0% 2% 0%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+
+.show {
+  animation: funwari 2s;
+}
+
+@keyframes funwari {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#photo {
+  height: 42%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 52%;
+  left: 0%;
+  z-index: 0;
+}
+
+#photo img {
+  width: 100%;
+  height: 100%;
+  animation: imagefuwari 2s forwards;
+}
+
+@keyframes imagefuwari {
+  0% {
+    transform: translateY(3%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* 矢印 */
+#next,
+#back {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: #ff744d;
+  /* border:1px solid #fff; */
+  box-shadow: 0 0 8px 2px #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -70px;
+  font-size: 1rem;
+  user-select: none;
+  color: #fff;
+}
+
+#back {
+  left: -70px;
+}
+
+#next:hover,
+#back:hover {
+  cursor: pointer;
+}
+
+/* //////////////////////////////// */
+@media screen and (max-width: 600px) {
+
+  .container {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100vw;
+    height: 900px;
+    background-image: url(../img/mat.webp);
+    /* background:pink; */
+  
+  }
+
+  #themeSelector,
+  #jsonSelector {
+    font-size: 20px;
+    width: 354px;
+    height: 50px;
+    display: block;
+    margin: 0 auto 20px;
+    ;
+  }
+
+  .flip-card-back,
+  .flip-card-front {
+    background-image: url("../img/card.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 354px;
+    height: 497px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 354px;
+    height: 497px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+
+
+
+  #next,
+  #back {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #ff744d;
+    /* border:1px solid #fff; */
+    box-shadow: 0 0 8px 2px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 550px;
+    right: 90px;
+    font-size: 1rem;
+    user-select: none;
+    color: #fff;
+  }
+  #back{
+    left: 90px;
+  }
+
+  #containerFront p,
+  #containerBack p {
+  font-size: 1.7rem;
+  }
+  
+  
+  #containerBack p {
+    font-size: 1.3rem;
+  }
+  
+  #containerBack p::before {
+    font-size: 1em;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 16px 1px #333;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  /* 垂直方向に反転する */
+  .flip {
+    transform: rotateY(180deg);
+  }
+  
+  /* 正面と背面の位置合わせ */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+}
