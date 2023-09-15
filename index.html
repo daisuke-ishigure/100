@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON百人一首</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <!-- <button id="winter">冬の歌</button> -->
+    <select id="themeSelector">
+      <!-- <option value="#">（1）歌のテーマを選んでください</option> -->
+      
+      <option value="spring" id="spring">春</option>
+      <option value="summer">夏</option>
+      <option value="autumn">秋</option>
+      <option value="winter">冬</option>
+      <option value="love">恋</option>
+      <option value="travel">旅</option>
+      <option value="farewell">別離</option>
+      <option value="misc">その他</option>
+      <option value="all">すべての歌</option>
+      
+    </select>
+    <select id="jsonSelector">
+      <!-- <option value="#">（2）歌人を選んでください</option> -->
+
+      
+    </select>
+    <!-- <button id="showSecondBtn">下の句を表示する</button> -->
+    <div class="flip-card">
+      <div class="flip-card-inner" id="flipCard">
+        <div class="flip-card-front">
+          <div id="containerFront"><!-- 上の句を入れる -->
+            <p style="transform:translateY(5%)">札の表に歌が表示されます。<br>クリックすると札が裏返り<br>解説が表示されます。</p>
+          </div>
+          <div id="photo"></div>
+        </div>
+        <div class="flip-card-back">
+          <div id="containerBack"></div><!-- 下の句を入れる -->
+          <!-- <p style="justify-content: end;"></p> -->
+          <div id="kaisetsu"></div>
+        </div>
+      </div>
+      <div id="next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+      <div id="back"><span class="material-symbols-outlined">arrow_back_ios_new</span></div>
+    </div>
+    
+    
+    <div id="commentary"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
