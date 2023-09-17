@@ -201,19 +201,47 @@ back.addEventListener('click', () => {
 });
 
 ////////////////////////////////////////////////////////////
-window.onload = () => {
-  // 望むテーマの値を設定します
-  const desiredTheme = "all";
+// window.onload = () => {
+//   // 望むテーマの値を設定します
+//   const desiredTheme = "all";
 
-  // themeSelectorの値を設定します
-  themeSelector.value = desiredTheme;
+//   // themeSelectorの値を設定します
+//   themeSelector.value = desiredTheme;
 
-  // 'change'イベントを新しく作成します
-  const changeEvent = new Event('change');
+//   // 'change'イベントを新しく作成します
+//   const changeEvent = new Event('change');
 
-  // themeSelector上で'change'イベントを発生させます
-  themeSelector.dispatchEvent(changeEvent);
-};
+//   // themeSelector上で'change'イベントを発生させます
+//   themeSelector.dispatchEvent(changeEvent);
+// };
+
+// JSONデータを取得するfetch部分
+fetch("https://daisuke-ishigure.github.io/100/js/hyakunin.json")
+  .then((response) => response.json())
+  .then((data) => {
+    poems = data;
+    // JSONデータが取得されたら、ここに実行したいコードを記述します
+    // 例：JSONデータがdata変数に格納されているので、これを使用して処理を行う
+    console.log(data);
+
+    // ここで実行したい処理を記述します
+    // 例：テーマセレクターを更新する関数を呼び出す
+    updateJsonSelectorOptions();
+
+    // themeSelectorの値を設定します
+    const desiredTheme = "all";
+    themeSelector.value = desiredTheme;
+
+    // 'change'イベントを新しく作成します
+    const changeEvent = new Event('change');
+
+    // themeSelector上で'change'イベントを発生させます
+    themeSelector.dispatchEvent(changeEvent);
+  })
+  .catch((error) => {
+    console.error('データの取得に失敗!:', error);
+  });
+
 
 ////////////////////////////////////////////////////////////
 // option要素「歌人を選んでください」を削除する関数
