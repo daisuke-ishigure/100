@@ -200,20 +200,34 @@ back.addEventListener('click', () => {
   selectMenu.dispatchEvent(changeEvent);
 });
 
-////////////////////////////////////////////////////////////
-// window.onload = () => {
-//   // 望むテーマの値を設定します
-//   const desiredTheme = "all";
+let touchStartX = null; // スワイプ開始位置を格納する変数
+let touchEndX = null;   // スワイプ終了位置を格納する変数
 
-//   // themeSelectorの値を設定します
-//   themeSelector.value = desiredTheme;
+// タッチ開始時の処理
+containerFront.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
 
-//   // 'change'イベントを新しく作成します
-//   const changeEvent = new Event('change');
+// タッチ終了時の処理
+containerFront.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].clientX;
 
-//   // themeSelector上で'change'イベントを発生させます
-//   themeSelector.dispatchEvent(changeEvent);
-// };
+  // スワイプの方向を判断
+  if (touchStartX - touchEndX > 50) {
+    // 左にスワイプした場合、次の歌を表示する
+    next.click(); // 次へボタンをクリックしたことと同じ処理
+  } else if (touchEndX - touchStartX > 50) {
+    // 右にスワイプした場合、前の歌を表示する
+    back.click(); // 前へボタンをクリックしたことと同じ処理
+  }
+});
+
+// このコードでは、スワイプ開始位置と終了位置を比較し、左にスワイプした場合は「次へ」ボタンを、右にスワイプした場合は「前へ」ボタンをクリックしたことと同じ処理を実行します。
+
+
+
+
+
 
 // JSONデータを取得するfetch部分
 fetch("https://daisuke-ishigure.github.io/100/js/hyakunin.json")
