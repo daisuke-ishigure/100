@@ -28,8 +28,6 @@ header h1{
   width: 100vw;
   height: auto;
   background-image: url(../img/mat.png);
-  position:absolute;
-  bottom:0;
 }
 
 img {
