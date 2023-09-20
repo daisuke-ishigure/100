@@ -44,7 +44,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 10px 0 30px;
+  padding: 10px 0 0;
   width: 100vw;
   background-image: url(../img/mat.png);
 }
