@@ -51,6 +51,7 @@ body {
 
 .select-container {
   width: 420px;
+  gap:5px;
   display: flex;
   margin: 20px auto;
 }
@@ -65,7 +66,9 @@ img {
   display: block;
   margin: 0 auto 10px;
 }
-
+/* .selector option{
+  text-align: -webkit-center;
+} */
 #themeSelector {
   width: 29%;
 }
