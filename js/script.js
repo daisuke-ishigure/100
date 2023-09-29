@@ -7,6 +7,7 @@ const commentary = document.getElementById("commentary");
 const flipBtn = document.getElementById("flipCard");
 const next = document.getElementById('next');
 const back = document.getElementById('back');
+const background = document.getElementById('background');
 
 ////////////////////////////////////////////////////////
 // テーマを選んで歌を抽出する
@@ -127,6 +128,7 @@ jsonSelector.addEventListener("change", () => {
       const name = selectedData.name;
       const theme = selectedData.theme;
       const ct = selectedData.comment;
+      const bg = selectedData.background;
       const number = selectedData.number;
       console.log(first);
 
@@ -140,6 +142,10 @@ jsonSelector.addEventListener("change", () => {
       <dt>歌の意味</dt>
       <dd>${ct}</dd>
       </dl>
+       `;
+
+       background.innerHTML = `
+       <p>${bg}</p>
        `;
 
       const portrait = selectedData.portrait;
