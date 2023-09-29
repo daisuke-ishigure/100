@@ -249,7 +249,7 @@ img {
   display: block;
   height: 50px;
   width: 50px;
-  background: #ff744d;
+  background: #296442;
   /* border:1px solid #fff; */
   box-shadow: 0 0 8px 2px #333;
   display: flex;
@@ -272,6 +272,28 @@ img {
 #back:hover {
   cursor: pointer;
 }
+
+
+
+/* //////////////////////////////// */
+/* 歌の背景 */
+/* //////////////////////////////// */
+#background{
+  width:55%;
+  min-height:2em;
+  margin: 0 auto;
+  padding:0.5em 1em;
+  background:#fff;
+  margin-bottom:2em;
+}
+
+#background p{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* //////////////////////////////// */
+/* フッター */
+/* //////////////////////////////// */
 
 .footer {
   display: flex;
