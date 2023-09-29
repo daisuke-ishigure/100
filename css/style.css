@@ -279,7 +279,7 @@ img {
 /* 歌の背景 */
 /* //////////////////////////////// */
 #background{
-  width:500px;
+  width:420px;
   min-height:2em;
   margin: 0 auto;
   padding:0.5em 1em;
@@ -430,6 +430,6 @@ img {
     -webkit-backface-visibility: hidden;
   }
   #background{
-    width:300px;
+    width:320px;
   }
 }
