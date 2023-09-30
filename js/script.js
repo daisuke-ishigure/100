@@ -66,7 +66,7 @@ function updateJsonSelectorOptions() {
 
 //クリックしたらフリップする
 
-flipBtn.addEventListener("click", () => {
+flipBtn.addEventListener("dblclick", () => {
   if (flipBtn.classList.contains("flip")) {
     flipBtn.classList.remove("flip");
   } else {
