@@ -145,7 +145,8 @@ jsonSelector.addEventListener("change", () => {
        `;
 
        background.innerHTML = `
-       <p>${bg}</p>
+        <dt>もっと知りたい</dt>
+        <dd>${bg}</dd>
        `;
 
       const portrait = selectedData.portrait;
