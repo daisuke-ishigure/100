@@ -284,10 +284,25 @@ img {
   margin: 0 auto;
   padding:0.5em 1em;
   background:#fff;
+  border:2px solid #43BF3A;
   margin-bottom:2em;
+  box-shadow:#fff 0 0 4px, #fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px;
 }
-
-#background p{
+#background P{
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+#background dt{
+  color: #111;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  width: fit-content;
+  border-left: 6px solid #ff744d;
+  padding-left: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+#background dd{
   font-family: 'Noto Sans JP', sans-serif;
   line-height:1.8;
   letter-spacing:0.08em;
