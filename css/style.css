@@ -279,7 +279,7 @@ img {
   cursor: pointer;
 }
 .sp{
-  display:none;
+  display:none !important;
 }
 
 
@@ -342,7 +342,7 @@ img {
 /* //////////////////////////////// */
 @media screen and (max-width: 600px) {
   .pc{
-    display:none;
+    display:none !important;
   }
   .header h1{
     font-size: 1.1em;
