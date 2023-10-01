@@ -226,27 +226,27 @@ back.addEventListener('click', () => {
 //スマホでスワイプしたときの動作
 ////////////////////////////////////////////////////////////////// 
 
-let touchStartX = null; // スワイプ開始位置を格納する変数
-let touchEndX = null;   // スワイプ終了位置を格納する変数
+// let touchStartX = null; // スワイプ開始位置を格納する変数
+// let touchEndX = null;   // スワイプ終了位置を格納する変数
 
-// タッチ開始時の処理
-containerFront.addEventListener("touchstart", (e) => {
-  touchStartX = e.touches[0].clientX;
-});
+// // タッチ開始時の処理
+// containerFront.addEventListener("touchstart", (e) => {
+//   touchStartX = e.touches[0].clientX;
+// });
 
-// タッチ終了時の処理
-containerFront.addEventListener("touchend", (e) => {
-  touchEndX = e.changedTouches[0].clientX;
+// // タッチ終了時の処理
+// containerFront.addEventListener("touchend", (e) => {
+//   touchEndX = e.changedTouches[0].clientX;
 
-  // スワイプの方向を判断
-  if (touchStartX - touchEndX > 50) {
-    // 左にスワイプした場合、次の歌を表示する
-    next.click(); // 次へボタンをクリックしたことと同じ処理
-  } else if (touchEndX - touchStartX > 50) {
-    // 右にスワイプした場合、前の歌を表示する
-    back.click(); // 前へボタンをクリックしたことと同じ処理
-  }
-});
+//   // スワイプの方向を判断
+//   if (touchStartX - touchEndX > 50) {
+//     // 左にスワイプした場合、次の歌を表示する
+//     next.click(); // 次へボタンをクリックしたことと同じ処理
+//   } else if (touchEndX - touchStartX > 50) {
+//     // 右にスワイプした場合、前の歌を表示する
+//     back.click(); // 前へボタンをクリックしたことと同じ処理
+//   }
+// });
 
 //スワイプ動作
 //----------------------------ここまで----------------------------
