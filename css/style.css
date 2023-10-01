@@ -530,8 +530,8 @@ img {
 
   #background {
     width: 320px;
-    min-height: 466p;
-    padding: 5px 10px;
+    height: auto;
+    padding: 5px 10px 10px;
     margin: 0 auto;
   }
 
