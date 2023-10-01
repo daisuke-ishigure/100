@@ -489,7 +489,7 @@ img {
   #containerFront dd {
     font-size: 23px;
   }
-
+  
   #containerBack dt,
   #containerBack dd {
     font-weight: normal;
@@ -498,6 +498,9 @@ img {
     font-size: 1.1rem;
     position: relative;
     align-items: start;
+  }
+  #containerBack dt{
+    font-family: 'Noto Serif JP', serif;
   }
   .flip-card-inner {
     position: relative;
