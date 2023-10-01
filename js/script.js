@@ -8,7 +8,6 @@ const flipBtn = document.getElementById("flipCard");
 const next = document.getElementById('next');
 const back = document.getElementById('back');
 const background = document.getElementById('background');
-
 ////////////////////////////////////////////////////////
 // テーマを選んで歌を抽出する
 const themeSelector = document.getElementById("themeSelector");
@@ -138,9 +137,11 @@ jsonSelector.addEventListener("change", () => {
 
       // HTMLを更新
       containerFront.innerHTML = `
-      <p id="uta">${first}<br>${second}</p>
+      <dl>
+      <dt>${name}</dt>
+      <dd>${first}<br>${second}</dd>
+      </dl>
        `;
-
       containerBack.innerHTML = `
       <dl>
       <dt>歌の意味</dt>
