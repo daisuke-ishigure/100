@@ -102,7 +102,7 @@ img {
 .flip-card-front {
   background-image: url("../img/card.webp");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 380px;
   height: 553px;
 }
