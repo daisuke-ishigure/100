@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* ------------------------------------------------------------ */
 /* リセットCSS */
 /* ------------------------------------------------------------ */
@@ -23,13 +24,15 @@ body {
   font-size: 16px;
 
 }
+
 /* ------------------------------------------------------------ */
 /* ヘッダー */
 /* ------------------------------------------------------------ */
 .header {
   display: flex;
   align-items: center;
-  padding: 1% 6% 1% 4%;
+  height: 50px;
+  padding: 0 5%;
   background-color: #296442;
 }
 
@@ -45,19 +48,29 @@ body {
   gap: 20px;
   color: #fff;
 }
+
 /* ------------------------------------------------------------ */
-/* ヘッダー */
+/* メイン */
 /* ------------------------------------------------------------ */
+main {
+  width: 100%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
+}
+
 .container {
   margin: 0 auto;
   padding: 10px 0 0;
   width: 100vw;
-  background-image: url(../img/mat.png);
+  background-image: url(../img/mat.webp);
 }
 
 .select-container {
-  width: 420px;
-  gap:5px;
+  width: 500px;
+  gap: 20px;
   display: flex;
   margin: 10px auto;
 }
@@ -72,6 +85,7 @@ img {
   display: block;
   margin: 0 auto 10px;
 }
+
 /* .selector option{
   text-align: -webkit-center;
 } */
@@ -88,16 +102,15 @@ img {
 .flip-card-front {
   background-image: url("../img/card.webp");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 420px;
-  height: 589px;
+  background-size: contain;
+  width: 380px;
+  height: 553px;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 420px;
-  height: 589px;
-  margin: 0 auto 30px;
+  width: 380px;
+  height: 553px;
   perspective: 1000px;
 }
 
@@ -165,7 +178,7 @@ img {
 #containerFront p {
   width: 100%;
   height: 50%;
-  font-size: 2rem;
+  font-size: 26px;
   letter-spacing: 0.2em;
   line-height: 2em;
   writing-mode: vertical-rl;
@@ -192,7 +205,7 @@ img {
   font-weight: normal;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.8em;
-  font-size: 1.3rem;
+  font-size: 18px;
   position: relative;
   align-items: start;
 }
@@ -204,7 +217,7 @@ img {
   width: fit-content;
   border-left: 6px solid #ff744d;
   padding-left: 5px;
-  font-size: 1.3rem;
+  font-size: 19px;
   margin-bottom: 0.5em;
 }
 
@@ -223,11 +236,11 @@ img {
 }
 
 #photo {
-  width: 87%;
+  width: 88%;
   text-align: center;
   position: absolute;
-  left: 6.5%;
-  bottom: 3%;
+  left: 6.1%;
+  bottom: 3.1%;
   z-index: 0;
 }
 
@@ -264,14 +277,14 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -70px;
+  right: -50px;
   font-size: 1rem;
   user-select: none;
   color: #fff;
 }
 
 #back {
-  left: -70px;
+  left: -50px;
 }
 
 #next:hover,
@@ -284,36 +297,44 @@ img {
 /* //////////////////////////////// */
 /* 歌の背景 */
 /* //////////////////////////////// */
-#background{
-  width:420px;
-  min-height:2em;
-  margin: 0 auto;
-  padding:0.5em 1em;
-  background:#fff;
-  border:2px solid #43BF3A;
-  margin-bottom:2em;
-  box-shadow:#fff 0 0 4px, #fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px,#fff 0 0 4px;
+#background {
+  width: 380px;
+  height: 553px;
+  padding: 1em 1em;
+  background: #fff;
+  border: 3px solid #43BF3A;
+  box-shadow: #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px;
 }
-#background P{
+
+#background P {
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
+  font-size: 16px;
 }
-#background dt{
+
+#background dt {
   color: #111;
   font-family: 'Noto Serif JP', serif;
   font-weight: bold;
   width: fit-content;
   border-left: 6px solid #ff744d;
   padding-left: 5px;
-  font-size: 1.1rem;
-  margin-bottom: 0.5em;
-}
-#background dd{
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height:1.8;
-  letter-spacing:0.08em;
+  font-size: 19px;
+  margin: 10px 0;
 }
 
+#background dd {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+#background dl:first-child{
+  margin-top:0px;
+}
+#background dl:last-child{
+  margin-top:20px;
+}
 /* //////////////////////////////// */
 /* フッター */
 /* //////////////////////////////// */
@@ -338,16 +359,26 @@ img {
 /* //////////////////////////////// */
 /* スマホ対応 */
 /* //////////////////////////////// */
-@media screen and (max-width: 600px) {
-  .pc{
-    display:none !important;
+@media screen and (max-width: 960px) {
+  .pc {
+    display: none !important;
+
   }
-  .sp{
-    display:block!important;
+
+  .sp {
+    display: flex !important;
   }
-  .header h1{
+
+  .header h1 {
     font-size: 1.1em;
   }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
   .container {
     position: relative;
     margin: 0 auto;
@@ -357,7 +388,7 @@ img {
 
   .select-container {
     width: 320px;
-    margin:10px auto;
+    margin: 10px auto;
   }
 
   .selector {
@@ -382,14 +413,14 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     width: 320px;
-    height: 449px;
+    height: 466px;
   }
 
   .flip-card {
     background-color: transparent;
     width: 320px;
-    height: 449px;
-    margin: 0 auto 30px;
+    height: 466px;
+    margin: 0 auto;
     perspective: 1000px;
   }
 
@@ -418,6 +449,7 @@ img {
   #containerFront p {
     font-size: 1.3rem;
   }
+
   #containerBack dt,
   #containerBack dd {
     font-weight: normal;
@@ -456,15 +488,27 @@ img {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
-  #background{
-    width:320px;
+
+  #background {
+    width: 320px;
+    height:auto;
+    padding:5px 10px;
+    margin: 0 auto;
+  }
+  #background dl:first-child{
+    margin-top:0px;
+  }
+  #background dl:last-child{
+    margin-top:20px;
   }
 }
 
-@media screen and (min-width: 600px) {
-.sp{
-  display:none !important;
-}
-.pc{
-  display:block !important;
+@media screen and (min-width: 960px) {
+  .sp {
+    display: none !important;
+  }
+
+  .pc {
+    display: flex !important;
+  }
 }
