@@ -100,11 +100,12 @@ img {
 /* カードの背景画像 */
 .flip-card-back,
 .flip-card-front {
+  width: 380px;
+  height: 553px;
   background-image: url("../img/card.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 380px;
-  height: 553px;
+  background-position:center;
 }
 
 .flip-card {
@@ -441,11 +442,12 @@ img {
 
   .flip-card-back,
   .flip-card-front {
+    width: 320px;
+    height: 466px;
     background-image: url("../img/card.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 320px;
-    height: 466px;
+    background-position:center;
   }
 
   .flip-card {
