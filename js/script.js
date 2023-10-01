@@ -138,7 +138,7 @@ jsonSelector.addEventListener("change", () => {
 
       // HTMLを更新
       containerFront.innerHTML = `
-      <p id="kaminoku">${first}<br>${second}</p>
+      <p id="uta">${first}<br>${second}</p>
        `;
 
       containerBack.innerHTML = `
