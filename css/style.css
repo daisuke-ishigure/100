@@ -22,7 +22,7 @@ li {
 body {
   font-family: "Kaisei HarunoUmi", serif;
   font-size: 16px;
-
+  color:#333;
 }
 
 /* ------------------------------------------------------------ */
@@ -167,24 +167,55 @@ img {
   z-index: 2;
 }
 
-#containerFront,
 #containerBack {
   width: 100%;
-  height: 100%;
   padding: 12% 10% 5%;
   margin: 0 auto;
 }
-
-#containerFront p {
+#containerFront{
   width: 100%;
-  height: 50%;
+  height:100%;
+  padding: 12% 10%;
+  
+}
+.initial_card{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+}
+#containerFront p{
+  writing-mode:vertical-rl;
   font-size: 26px;
-  letter-spacing: 0.2em;
-  line-height: 2em;
-  writing-mode: vertical-rl;
-  height: 100%;
-  display: flex;
+  line-height:2;
+}
+#containerFront dl{
+  width:100%;
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+}
+#containerFront dt{
+  display:flex;
+  justify-content: center;
   align-items: center;
+  writing-mode: vertical-rl;
+  font-size: 21px;
+  width:15%;
+  z-index: 2;
+  user-select: none;
+  text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
+}
+#containerFront dd {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:85%;
+  font-size: 26px;
+  line-height:1.9;
+  width: 100%;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
   color: #333;
   position: relative;
   z-index: 1;
@@ -193,7 +224,6 @@ img {
   text-shadow: 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff, 0 0 4px #fff;
 }
 
-  
 #containerBack dl {
   width: 100%;
   height: 100%;
@@ -328,12 +358,15 @@ img {
   line-height: 1.7;
   letter-spacing: 0.08em;
 }
-#background dl:first-child{
-  margin-top:0px;
+
+#background dl:first-child {
+  margin-top: 0px;
 }
-#background dl:last-child{
-  margin-top:20px;
+
+#background dl:last-child {
+  margin-top: 20px;
 }
+
 /* //////////////////////////////// */
 /* フッター */
 /* //////////////////////////////// */
@@ -444,10 +477,14 @@ img {
   #back {
     left: -8px;
   }
-
-  #containerFront p {
-    font-size: 1.3rem;
-    user-select: none;
+  #containerFront p{
+    font-size:22px;
+  }
+  #containerFront dt {
+    font-size: 20px;
+  }
+  #containerFront dd {
+    font-size: 23px;
   }
 
   #containerBack dt,
@@ -491,15 +528,17 @@ img {
 
   #background {
     width: 320px;
-    height:auto;
-    padding:5px 10px;
+    height: auto;
+    padding: 5px 10px;
     margin: 0 auto;
   }
-  #background dl:first-child{
-    margin-top:0px;
+
+  #background dl:first-child {
+    margin-top: 0px;
   }
-  #background dl:last-child{
-    margin-top:20px;
+
+  #background dl:last-child {
+    margin-top: 20px;
   }
 }
 
