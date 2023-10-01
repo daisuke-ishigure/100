@@ -29,6 +29,7 @@ themeSelector.addEventListener('change', () => {
 
 // JSONデータを取得するfetch部分
 fetch("https://daisuke-ishigure.github.io/100/js/hyakunin.json")
+// fetch("../js/hyakunin.json")
   .then((response) => response.json())
   .then((data) => {
     poems = data;
@@ -119,6 +120,8 @@ jsonSelector.addEventListener("change", () => {
   }
 
   fetch("https://daisuke-ishigure.github.io/100/js/hyakunin.json")
+  // fetch("../js/hyakunin.json")
+
     .then((response) => response.json())
     .then((data) => {
       const selectedData = data[selectedDataSet];
@@ -129,6 +132,7 @@ jsonSelector.addEventListener("change", () => {
       const theme = selectedData.theme;
       const ct = selectedData.comment;
       const bg = selectedData.background;
+      const personality = selectedData.personality;
       const number = selectedData.number;
       console.log(first);
 
@@ -145,8 +149,14 @@ jsonSelector.addEventListener("change", () => {
        `;
 
        background.innerHTML = `
-        <dt>もっと知りたい</dt>
+       <dl>
+        <dt>歌の背景</dt>
         <dd>${bg}</dd>
+      </dl>
+      <dl>
+        <dt>歌人の人となり</dt>
+        <dd>${personality}</dd>
+      </dl>
        `;
 
       const portrait = selectedData.portrait;
@@ -242,6 +252,7 @@ containerFront.addEventListener("touchend", (e) => {
 
 // JSONデータを取得するfetch部分
 fetch("https://daisuke-ishigure.github.io/100/js/hyakunin.json")
+// fetch("../js/hyakunin.json")
   .then((response) => response.json())
   .then((data) => {
     poems = data;
