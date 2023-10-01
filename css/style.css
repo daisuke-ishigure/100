@@ -461,8 +461,8 @@ img {
   #next,
   #back {
     display: block;
-    height: 40px;
-    width: 25px;
+    height: 60px;
+    width: 30px;
     background: #ff744d;
     box-shadow: 0 0 8px 2px #333;
     display: flex;
@@ -498,9 +498,6 @@ img {
     position: relative;
     align-items: start;
   }
-
-
-
   .flip-card-inner {
     position: relative;
     width: 100%;
