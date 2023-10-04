@@ -56,9 +56,9 @@ body {
 /* ------------------------------------------------------------ */
 /* メイン */
 /* ------------------------------------------------------------ */
-main {
+.main_contents {
   width: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 100px;
@@ -67,7 +67,8 @@ main {
 
 .container {
   margin: 0 auto;
-  padding: 10px 0 0;
+  padding: 10px 0 20px;
+  height:100%;
   width: 100vw;
   background-image: url(../img/mat.webp);
 }
@@ -190,6 +191,16 @@ img {
   height:100%;
 }
 #containerFront p{
+  writing-mode:vertical-rl;
+  font-size: 26px;
+  line-height:2;
+}
+.containerBack{/* 初期カードの背面の文字 */
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -28%);
+  height:100%;
   writing-mode:vertical-rl;
   font-size: 26px;
   line-height:2;
@@ -332,7 +343,7 @@ img {
 /* //////////////////////////////// */
 /* 歌の背景 */
 /* //////////////////////////////// */
-#background {
+#explanation {
   width: 380px;
   height: 553px;
   padding: 1em 1em;
@@ -341,13 +352,13 @@ img {
   box-shadow: #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px, #fff 0 0 4px;
 }
 
-#background P {
+#explanation p {
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   font-size: 16px;
 }
 
-#background dt {
+#explanation dt {
   color: #111;
   font-family: 'Noto Serif JP', serif;
   font-weight: bold;
@@ -358,18 +369,18 @@ img {
   margin: 10px 0;
 }
 
-#background dd {
+#explanation dd {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 17px;
   line-height: 1.7;
   letter-spacing: 0.08em;
 }
 
-#background dl:first-child {
+#explanation dl:first-child {
   margin-top: 0px;
 }
 
-#background dl:last-child {
+#explanation dl:last-child {
   margin-top: 20px;
 }
 
@@ -411,7 +422,7 @@ img {
     font-size: 1.1em;
   }
 
-  main {
+  .main_contents {
     flex-direction: column;
     width: 100%;
     gap: 30px;
@@ -533,18 +544,18 @@ img {
     -webkit-backface-visibility: hidden;
   }
 
-  #background {
+  #explanation {
     width: 320px;
     height: auto;
     padding: 5px 10px 10px;
     margin: 0 auto;
   }
 
-  #background dl:first-child {
+  #explanation dl:first-child {
     margin-top: 0px;
   }
 
-  #background dl:last-child {
+  #explanation dl:last-child {
     margin-top: 20px;
   }
 }
