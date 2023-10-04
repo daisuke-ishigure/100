@@ -19,11 +19,14 @@ li {
   list-style: none;
 }
 
+html{
+  height:auto;
+}
 body {
   font-family: "Kaisei HarunoUmi", serif;
   font-size: 16px;
   color:#333;
-  min-height:100vh;
+  height:100%;
 }
 
 /* ------------------------------------------------------------ */
