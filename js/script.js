@@ -127,9 +127,10 @@ jsonSelector.addEventListener("change", () => {
       const second = selectedData.second;
       const name = selectedData.name;
       const theme = selectedData.theme;
-      const ct = selectedData.comment;
+      const translation = selectedData.translation;
       const bg = selectedData.background;
       const number = selectedData.number;
+      const personality = selectedData.personality;
       console.log(first);
 
       // HTMLを更新
@@ -142,13 +143,13 @@ jsonSelector.addEventListener("change", () => {
       containerBack.innerHTML = `
       <dl>
       <dt>歌の意味</dt>
-      <dd>${ct}</dd>
+      <dd>${translation}</dd>
       </dl>
        `;
 
        explanation.innerHTML = `
        <dl>
-        <dt>歌の背景</dt>
+        <dt>補足説明</dt>
         <dd>${bg}</dd>
       </dl>
       <dl>
