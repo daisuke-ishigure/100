@@ -7,7 +7,7 @@ const commentary = document.getElementById("commentary");
 const flipBtn = document.getElementById("flipCard");
 const next = document.getElementById('next');
 const back = document.getElementById('back');
-const background = document.getElementById('background');
+const explanation = document.getElementById('explanation');
 ////////////////////////////////////////////////////////
 // テーマを選んで歌を抽出する
 const themeSelector = document.getElementById("themeSelector");
@@ -109,8 +109,6 @@ jsonSelector.addEventListener("change", () => {
     }
   }
 
-
-
   //前の現代語訳を削除する
   if (kaisetsu.hasChildNodes()) {
     while (kaisetsu.firstChild) {
@@ -131,7 +129,6 @@ jsonSelector.addEventListener("change", () => {
       const theme = selectedData.theme;
       const ct = selectedData.comment;
       const bg = selectedData.background;
-      const personality = selectedData.personality;
       const number = selectedData.number;
       console.log(first);
 
@@ -149,7 +146,7 @@ jsonSelector.addEventListener("change", () => {
       </dl>
        `;
 
-       background.innerHTML = `
+       explanation.innerHTML = `
        <dl>
         <dt>歌の背景</dt>
         <dd>${bg}</dd>
@@ -160,7 +157,6 @@ jsonSelector.addEventListener("change", () => {
       </dl>
        `;
 
-      const portrait = selectedData.portrait;
       const img = document.createElement("img");
       img.src = `https://daisuke-ishigure.github.io/100/img/${number}.svg`;
       photo.appendChild(img);
