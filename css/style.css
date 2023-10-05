@@ -14,14 +14,16 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  vertical-align:bottom;
+}
+
 ul,
 li {
   list-style: none;
 }
 
-html{
-  height:auto;
-}
 body {
   font-family: "Kaisei HarunoUmi", serif;
   font-size: 16px;
@@ -56,14 +58,6 @@ body {
 /* ------------------------------------------------------------ */
 /* メイン */
 /* ------------------------------------------------------------ */
-.main_contents {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  position: relative;
-}
 
 .container {
   margin: 0 auto;
@@ -80,8 +74,13 @@ body {
   margin: 10px auto;
 }
 
-img {
-  max-width: 100%;
+.main_contents {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  position: relative;
 }
 
 .selector {
@@ -101,13 +100,14 @@ img {
 #jsonSelector {
   width: 73%;
 }
-
-/* カードの背景画像 */
+/* ------------------------------------------------------------ */
+/* 札の領域 */
+/* ------------------------------------------------------------ */
 .flip-card-back,
 .flip-card-front {
   width: 380px;
   height: 553px;
-  background-image: url("../img/card.webp");
+  background-image: url("../img/card.webp");/* 札の画像 */
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center;
@@ -120,20 +120,19 @@ img {
   perspective: 1000px;
 }
 
-/* 正面と背面の位置合わせ */
 .flip-card-inner {
-  position: relative;
+  position: relative;/* 札の位置を合わせるための要にする */
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  box-shadow: 1px 1px 16px 1px #333;
+  transition: transform 0.8s;/* 札の回転時間 */
+  transform-style: preserve-3d;/* 札の回転を3次元 */
+  box-shadow: 1px 1px 8px 1px #333;
   transform: translate3d(0, 0, 0);
 }
 
 /* 垂直方向に反転する */
 .flip {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);/* javascriptでダブルクリック時に適用 */
 }
 
 /* 正面と背面の位置合わせ */
@@ -142,16 +141,16 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
-  backface-visibility: hidden;
+  /* transition: transform 0.8s; */
+  backface-visibility: hidden;/* 反転したときに裏面を隠す */
   -webkit-backface-visibility: hidden;
 }
 
 /* 背面 */
 .flip-card-back {
   transform: rotateY(180deg);
+  backface-visibility: hidden;/* 反転したときに裏面を隠す */
   -webkit-backface-visibility: hidden;
-  /* プレフィックスを追加 */
 }
 
 /* カードの裏面に擬似要素を追加 */
@@ -162,10 +161,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
   /* 背景を透明に */
-  pointer-events: none;
-  /* イベントを透過 */
 }
 
 /* 正面カードのテキストが隠れるようにz-indexを設定 */
@@ -244,6 +241,7 @@ img {
 #containerBack dl {
   width: 100%;
   height: 100%;
+  user-select:none;
 }
 
 #containerBack dt,
@@ -395,9 +393,6 @@ img {
   padding: 10px 5%;
   background-color: #296442;
   width: 100%;
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
 }
 
 .footer p {
@@ -495,7 +490,10 @@ img {
   #back {
     left: -8px;
   }
-  #containerFront p{
+  #containerFront p{/* 初期カードの文字サイズ */
+    font-size:22px;
+  }
+  .containerBack{
     font-size:22px;
   }
   #containerFront dt {
@@ -527,7 +525,7 @@ img {
     transform: translate3d(0, 0, 0);
   }
 
-  /* 垂直方向に反転する */
+  /* 水平方向に反転する */
   .flip {
     transform: rotateY(180deg);
   }
@@ -539,7 +537,6 @@ img {
     width: 100%;
     height: 100%;
     transition: transform 1.2s;
-    /* transition-timing-function:ease-out; */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
