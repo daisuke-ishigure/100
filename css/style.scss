@@ -257,7 +257,10 @@ main {
 }
 
 #back {
-  left: -25px;
+  left: -55px;
+  @media screen and (max-width: 960px) {
+    left: -25px;
+  }
 }
 
 #next:hover,
