@@ -47,7 +47,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 60px;
   padding: 0 5%;
   background-color: #4e3052;
   @media screen and (max-width: 960px) {
@@ -59,7 +59,7 @@ body {
   }
 }
 .header h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Noto Serif JP", serif;
   color: #fff;
   margin-bottom: 5px;
@@ -106,7 +106,7 @@ main {
     height: $spCardHeight;
   }
   transform-style: preserve-3d; /* card-frontとcard-backを3d空間上に置くため */
-  perspective: 600px;
+  perspective: 1000px;
 }
 /* カード表 */
 .card-front {
@@ -221,7 +221,7 @@ main {
 .card-back dl dd {
   writing-mode: vertical-rl;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 0.08em;
 }
@@ -263,13 +263,13 @@ main {
   cursor: pointer;
 }
 
-/* 補足説明 */
+/* -----補足説明----- */
 .explanation {
   width: $pcCardWidth;
   height: $pcCardHeight;
   @media screen and (max-width: 960px) {
     width: $spCardWidth;
-    height: $spCardHeight;
+    height:fit-content;
   }
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   background-color: #f1f4db;
@@ -281,15 +281,17 @@ main {
   font-family: "Kaisei HarunoUmi", serif;
   font-size: 1.2rem;
   margin-bottom: 0.5em;
-  border-left: 8px solid #b82343;
-  padding-left: 8px;
+  width:fit-content;
+  background:#b82343;
+  color:#fff;
+  padding: 2px 8px;
 }
 .explanation dl:nth-child(2) > dt {
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 .explanation dd {
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.0rem;
+  line-height: 1.6;
   letter-spacing: 0.05em;
 }
 
