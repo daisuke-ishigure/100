@@ -322,6 +322,7 @@ main {
     height: -moz-fit-content;
     height: fit-content;
     min-height: 434px;
+    padding: 3%;
   }
 }
 
