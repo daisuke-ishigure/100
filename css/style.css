@@ -132,9 +132,7 @@ main {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   border: 15px solid #4e3052;
   background-color: #f1f4db;
-  /* background-position:center;
-  background-repeat:no-repeat;
-  background-size:cover; */
+  backface-visibility: hidden; /* 裏面を隠す */
   position: relative;
 }
 
@@ -220,9 +218,6 @@ main {
   backface-visibility: hidden; /* 裏面を隠す */
   border: 15px solid #4e3052;
   background-color: #f1f4db;
-  /* background-image:url(../img/card.webp);
-  background-position:center;
-  background-repeat:no-repeat; */
   background-size: cover;
 }
 
