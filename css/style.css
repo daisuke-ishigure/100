@@ -84,9 +84,19 @@ body {
 #themeSelector {
   width: 8em;
 }
+#themeSelector option {
+  font-size: 1rem;
+}
 
 #jsonSelector {
   width: 16em;
+}
+#jsonSelector option {
+  font-size: 1rem;
+}
+
+option {
+  font-size: 1rem;
 }
 
 /* --------------------------------------------
