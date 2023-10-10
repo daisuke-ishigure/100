@@ -87,6 +87,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   #themeSelector {
+    width: 5em;
     font-size: 14px;
   }
 }
@@ -97,7 +98,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   #jsonSelector {
-    width: 8em;
+    width: 13em;
     font-size: 14px;
   }
 }
