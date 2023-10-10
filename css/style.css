@@ -313,7 +313,7 @@ main {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   background-color: #f1f4db;
   border: 15px solid #4e3052;
-  padding: 1.5%;
+  padding: 1.8%;
   font-family: "noto-sans-jp", sans-serif;
 }
 @media screen and (max-width: 960px) {
@@ -321,18 +321,24 @@ main {
     width: 300px;
     height: -moz-fit-content;
     height: fit-content;
+    min-height: 434px;
   }
 }
 
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5em;
   width: -moz-fit-content;
   width: fit-content;
   background: #b82343;
   color: #fff;
   padding: 2px 8px;
+}
+@media screen and (max-width: 960px) {
+  .explanation dt {
+    font-size: 1.3rem;
+  }
 }
 
 .explanation dl:nth-child(2) > dt {
@@ -343,6 +349,11 @@ main {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 960px) {
+  .explanation dd {
+    font-size: 1.2rem;
+  }
 }
 
 /* ----------------------
