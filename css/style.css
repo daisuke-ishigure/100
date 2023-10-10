@@ -83,16 +83,18 @@ body {
 
 #themeSelector {
   width: 8em;
+  font-size: 16px !important;
 }
 #themeSelector option {
-  font-size: 1rem;
+  font-size: 16px !important;
 }
 
 #jsonSelector {
   width: 16em;
+  font-size: 16px !important;
 }
 #jsonSelector option {
-  font-size: 1rem;
+  font-size: 16px !important;
 }
 
 option {
