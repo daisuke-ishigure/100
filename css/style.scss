@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* 変数定義 */
+$pcCardWidth: 380px;
+$pcCardHeight: 550px;
+$spCardWidth: 300px;
+$spCardHeight: 434px;
+
+/* 共通スタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+img {
+  height: auto;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 16px;
+  @media screen and (max-width: 960px) {
+    font-size:13px;
+  }
+}
+body {
+  font-family: "Kaisei HarunoUmi", serif;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* --------------------------------------------
+ヘッダー
+-------------------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 5%;
+  background-color: #4e3052;
+  @media screen and (max-width: 960px) {
+    height: 100px;
+    flex-direction:column;
+    justify-content: center;
+    gap:0.25em;
+    padding:2em 0;
+  }
+}
+.header h1 {
+  font-size: 1.3rem;
+  font-family: "Noto Serif JP", serif;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* セレクター */
+.select-container {
+  display: flex;
+  gap: 1em;
+  line-height: 100px;
+}
+.select-container .selector {
+  height: 30px;
+}
+#themeSelector {
+  width: 8em;
+}
+#jsonSelector {
+  width: 16em;
+}
+/* --------------------------------------------
+メイン
+-------------------------------------------- */
+main {
+  background-image: url(../img/tatami.webp);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  padding: 1em;
+  @media screen and (max-width: 960px) {
+    padding: 1em;
+    flex-direction:column;
+    gap:1em;  
+  }
+}
+/* カード全体 */
+.card-item {
+  width: $pcCardWidth;
+  height: $pcCardHeight;
+  @media screen and (max-width: 960px) {
+    width: $spCardWidth;
+    height: $spCardHeight;
+  }
+  transform-style: preserve-3d; /* card-frontとcard-backを3d空間上に置くため */
+  perspective: 1000px;
+}
+/* カード表 */
+.card-front {
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+  border: 15px solid #4e3052;
+  background-color: #f1f4db;
+  backface-visibility: hidden; /* 裏面を隠す */
+  position: relative;
+}
+.initial-setting {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+.initial-setting h3 {
+  font-size: 1.4rem;
+  writing-mode: vertical-rl;
+  width: fit-content;
+  height: fit-content;
+  padding: 1em 0.1em 1em 0;
+  background-color: #b82343;
+  color: #fff;
+}
+.initial-setting p {
+  width: fit-content;
+  height: 100%;
+  writing-mode: vertical-rl;
+  font-family: "noto-sans-pro", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.card-front dl {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+  user-select: none;
+}
+.card-front dl dt {
+  writing-mode: vertical-rl;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.card-front dl dd {
+  writing-mode: vertical-rl;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.2em;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-shadow: 0px 0px 3px #F1F4DB,0px 0px 3px #F1F4DB,0px 0px 3px #F1F4DB; 
+  z-index: 3;
+}
+.card-front img {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, -1%);
+  width: 98%;
+  user-select: none;
+}
+
+/* カード裏 */
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden; /* 裏面を隠す */
+  border: 15px solid #4e3052;
+  background-color: #f1f4db;
+  background-size: cover;
+}
+/* クリックしたときの動作 表*/
+.card-item.active .card-front {
+  transform: rotateY(180deg);
+}
+/* クリックしたときの動作 表*/
+.card-item.active .card-back {
+  transform: rotateY(0);
+}
+
+.card-back dl {
+  width: 100%;
+  height: 100%;
+  padding: 15% 0 10% 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  user-select: none;
+}
+.card-back dl dt {
+  writing-mode: vertical-rl;
+  font-size: 1.4rem;
+  height: fit-content;
+  padding: 0.5em 0.1em 0.5em 0;
+  background-color: #b82343;
+  color: #fff;
+}
+.card-back dl dd {
+  writing-mode: vertical-rl;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+/* 矢印 */
+#next,
+#back {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: #b82343;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -55px;
+  font-size: 1rem;
+  user-select: none;
+  color: #fff;
+  @media screen and (max-width: 960px) {
+    height: 60px;
+    width: 25px;
+    right: -25px;
+  }
+}
+
+#back {
+  left: -55px;
+  @media screen and (max-width: 960px) {
+    left: -25px;
+  }
+}
+
+#next:hover,
+#back:hover {
+  cursor: pointer;
+}
+
+/* -----補足説明----- */
+.explanation {
+  width: $pcCardWidth;
+  height: $pcCardHeight;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f1f4db;
+  border: 15px solid #4e3052;
+  padding: 1.8%;
+  font-family: "noto-sans-jp", sans-serif;
+  @media screen and (max-width: 960px) {
+    width: $spCardWidth;
+    height:fit-content;
+    min-height:$spCardHeight;
+    padding:2.2%;
+  }
+}
+.explanation dt {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+  width:fit-content;
+  background:#b82343;
+  color:#fff;
+  padding: 2px 8px;
+  @media screen and (max-width: 960px) {
+    font-size: 1.3rem;
+  }
+}
+.explanation dl:nth-child(2) > dt {
+  margin-top: 0.8em;
+}
+.explanation dd {
+  font-size: 1.0rem;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  @media screen and (max-width: 960px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* ----------------------
+フッター
+------------------------- */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5%;
+  background-color: #4e3052;
+  width: 100%;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
