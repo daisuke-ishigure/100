@@ -336,7 +336,7 @@ main {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   background-color: #f1f4db;
   border: 15px solid #4e3052;
-  padding: 1.8%;
+  padding: 1.2%;
   font-family: "noto-sans-jp", sans-serif;
 }
 @media screen and (max-width: 960px) {
