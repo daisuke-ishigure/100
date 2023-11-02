@@ -113,7 +113,7 @@ jsonSelector.addEventListener("change", () => {
             <dt>${name}</dt>
             <dd>${first}<br>${second}</dd>
           </dl>
-          <img src="../img/${number}.svg" alt="${name}">
+          <img src="https://daisuke-ishigure.github.io/100/img/${number}.svg" alt="${name}">
         `);
       $('.card-back').append(`
       <dl>
