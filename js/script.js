@@ -1,7 +1,7 @@
 'use strict';
 $();
 
-const jsonAddress = "../js/hyakunin.json";
+const jsonAddress = "hyakunin.json";
 
 // JSONデータを格納する変数を初期化する
 let poems = [];
