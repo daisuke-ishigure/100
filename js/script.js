@@ -49,10 +49,11 @@ function updateJsonSelectorOptions() {
     '<option value="all">歌人を選んでください</option>'
   );
   themePoems.forEach(function (poem) {
+    let strippedName = poem.name.replace(/<rt>.*?<\/rt>/g, '');/* rt要素を削除する */
     $('#jsonSelector').append(
-      `<option value="${poem.number}">第${poem.number}首:${poem.name}</option>`
+      `<option value="${poem.number}">第${poem.number}首:${strippedName}</option>`
     );
-  });
+});
 }
 
 $(function () {
