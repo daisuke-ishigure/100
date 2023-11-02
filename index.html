@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <p>下記のリンクに移動いたしました。<br><a href="https://daisuke-ishigure.github.io/100/html/index.html">https://daisuke-ishigure.github.io/100/html/index.html</a></p>
+  <!-- ヘッダーここから -->
+  <header class="header">
+    <h1>時雨の百人一首</h1>
+    <!-- <nav class="nav">
+      <ul>
+        <li><a href="#">かるた</a></li>
+        <li><a href="#">豆知識</a></li>
+      </ul>
+    </nav> -->
+    <div class="select-container">
+      <select id="themeSelector" class="selector">
+        <option value="all">テーマ</option>
+        <option value="spring">春</option>
+        <option value="summer">夏</option>
+        <option value="autumn">秋</option>
+        <option value="winter">冬</option>
+        <option value="love">恋</option>
+        <option value="travel">旅</option>
+        <option value="farewell">別離</option>
+        <option value="misc">その他</option>
+      </select>
+      <select id="jsonSelector" class="selector"></select>
+    </div>
+  </header>
+  <!-- ヘッダーここまで -->
+  <!-- メインここから -->
+  <main>
+    <div class="card-item">
+      <div class="card-front">
+        <div class="initial-setting">
+          <h3>使い方</h3>
+          <p>右上のメニューを使うと、テーマで歌を絞り込めます。<br>歌の札をダブルクリックすると札が裏返り、歌の意味が表示されます。</p>
+        </div>
+      </div>
+      <div class="card-back"></div>
+      <div id="next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+      <div id="back"><span class="material-symbols-outlined">arrow_back_ios_new</span></div>
+    </div><!-- '.card-itemここまで' -->
+
+    <div class="explanation"></div>
+  </main>
+
+  <!-- メインここまで -->
+  <!-- フッターここから -->
+  <footer>
+    <p><small>&copy;2023 しぐれのたいふ</small></p>
+  </footer>
+  <!-- フッターここまで -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
