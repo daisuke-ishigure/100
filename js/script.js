@@ -1,7 +1,7 @@
 'use strict';
 $();
 
-const jsonAddress = "hyakunin.json";
+const jsonAddress = "https://daisuke-ishigure.github.io/100/js/hyakunin.json";
 
 // JSONデータを格納する変数を初期化する
 let poems = [];
