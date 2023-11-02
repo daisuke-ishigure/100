@@ -1,7 +1,7 @@
 'use strict';
 $();
 
-const jsonAddress = "https://daisuke-ishigure.github.io/100/js/hyakunin.json";
+const jsonAddress = "../js/hyakunin.json";
 
 // JSONデータを格納する変数を初期化する
 let poems = [];
@@ -49,11 +49,10 @@ function updateJsonSelectorOptions() {
     '<option value="all">歌人を選んでください</option>'
   );
   themePoems.forEach(function (poem) {
-    let strippedName = poem.name.replace(/<rt>.*?<\/rt>/g, '');/* rt要素を削除する */
     $('#jsonSelector').append(
-      `<option value="${poem.number}">第${poem.number}首:${strippedName}</option>`
+      `<option value="${poem.number}">第${poem.number}首:${poem.name}</option>`
     );
-});
+  });
 }
 
 $(function () {
@@ -113,7 +112,7 @@ jsonSelector.addEventListener("change", () => {
             <dt>${name}</dt>
             <dd>${first}<br>${second}</dd>
           </dl>
-          <img src="https://daisuke-ishigure.github.io/100/img/${number}.svg" alt="${name}">
+          <img src="../img/${number}.svg" alt="${name}">
         `);
       $('.card-back').append(`
       <dl>
