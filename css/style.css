@@ -365,8 +365,8 @@ rt {
 
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
-  font-size: 1.2rem;
-  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+  margin-bottom: 0.3em;
   width: -moz-fit-content;
   width: fit-content;
   background: #b82343;
@@ -375,7 +375,7 @@ rt {
 }
 @media screen and (max-width: 960px) {
   .explanation dt {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 

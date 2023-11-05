@@ -311,15 +311,14 @@ rt{
 }
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
-  // font-size: 1.3rem;
-  font-size: 1.2rem;
-  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+  margin-bottom: 0.3em;
   width:fit-content;
   background:#b82343;
   color:#fff;
   padding: 2px 8px;
   @media screen and (max-width: 960px) {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 }
 .explanation dl:nth-child(2) > dt {
