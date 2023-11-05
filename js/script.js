@@ -56,7 +56,7 @@ function updateJsonSelectorOptions() {
 }
 
 $(function () {
-  $('.card-item').on('dblclick', function (event) {
+  $('.card-item').on('click', function (event) {
     $(this).toggleClass('active');
     event.stopPropagation();
   })
@@ -195,12 +195,12 @@ $(function(){
 /* 前へボタン、戻るボタンの誤動作を防止するため、
 ダブルクリックの親要素への伝播をstopさせる */
 $(function(){
-  $('#back').on('dblclick',function(event){
+  $('#back').on('click',function(event){
     event.stopPropagation();
   });
 });
 $(function(){
-  $('#next').on('dblclick',function(event){
+  $('#next').on('click',function(event){
     event.stopPropagation();
   });
 });
