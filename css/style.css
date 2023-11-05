@@ -350,6 +350,7 @@ rt {
   height: 550px;
   background-image: url(../img/makimono.svg);
   background-repeat: no-repeat;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
 }

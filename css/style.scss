@@ -297,6 +297,7 @@ rt{
   height: $pcCardHeight;
   background-image:url(../img/makimono.svg);
   background-repeat:no-repeat;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
   // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   // background-color: #F9EDCA;
   // border: 15px solid #4e3052;
