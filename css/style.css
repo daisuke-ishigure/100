@@ -359,13 +359,13 @@ rt {
     height: -moz-fit-content;
     height: fit-content;
     min-height: 434px;
-    padding: 30px 30px 30px 30px;
+    padding: 25px 30px 30px 30px;
   }
 }
 
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5em;
   width: -moz-fit-content;
   width: fit-content;

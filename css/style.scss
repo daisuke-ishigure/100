@@ -133,7 +133,7 @@ main {
   border-radius: 2px;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   border: 15px solid #4e3052;
-  background-color: #f1f4db;
+  background-color: #F9EDCA;
   backface-visibility: hidden; /* 裏面を隠す */
   position: relative;
 }
@@ -178,13 +178,23 @@ main {
 .card-front dl dd {
   writing-mode: vertical-rl;
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 2;
   letter-spacing: 0.2em;
   flex-grow: 1;
-  display: flex;
   align-items: center;
-  text-shadow: 0px 0px 3px #F1F4DB,0px 0px 3px #F1F4DB,0px 0px 3px #F1F4DB; 
+  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
   z-index: 3;
+  @media (max-width:960px){
+    line-height: 1.8;
+  }
+}
+
+rt{
+  font-size:0.8rem;
+  letter-spacing:0;
+  @media (max-width:960px){
+    display:none;
+  }
 }
 .card-front img {
   position: absolute;
@@ -206,7 +216,7 @@ main {
   transform: rotateY(-180deg);
   backface-visibility: hidden; /* 裏面を隠す */
   border: 15px solid #4e3052;
-  background-color: #f1f4db;
+  background-color: #F9EDCA;
   background-size: cover;
 }
 /* クリックしたときの動作 表*/
@@ -285,28 +295,31 @@ main {
 .explanation {
   width: $pcCardWidth;
   height: $pcCardHeight;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
-  background-color: #f1f4db;
-  border: 15px solid #4e3052;
-  padding: 1.2%;
+  background-image:url(../img/makimono.svg);
+  background-repeat:no-repeat;
+  // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+  // background-color: #F9EDCA;
+  // border: 15px solid #4e3052;
+  padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
     width: $spCardWidth;
     height:fit-content;
     min-height:$spCardHeight;
-    padding:3%;
+    padding:25px 30px 30px 30px;
   }
 }
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
-  font-size: 1.3rem;
+  // font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5em;
   width:fit-content;
   background:#b82343;
   color:#fff;
   padding: 2px 8px;
   @media screen and (max-width: 960px) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 .explanation dl:nth-child(2) > dt {
@@ -317,7 +330,7 @@ main {
   line-height: 1.6;
   letter-spacing: 0.05em;
   @media screen and (max-width: 960px) {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 }
 
