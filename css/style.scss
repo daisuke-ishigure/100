@@ -247,6 +247,7 @@ rt{
   color: #fff;
 }
 .card-back dl dd {
+  margin-top:2em;
   writing-mode: vertical-rl;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.3rem;
@@ -319,7 +320,7 @@ rt{
   color:#fff;
   padding: 2px 8px;
   @media screen and (max-width: 960px) {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
   }
 }
 .explanation dl:nth-child(2) > dt {
@@ -330,7 +331,8 @@ rt{
   line-height: 1.6;
   letter-spacing: 0.05em;
   @media screen and (max-width: 960px) {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
+    line-height:1.4;
   }
 }
 
