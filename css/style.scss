@@ -157,7 +157,7 @@ main {
 }
 .initial-setting p{
   width: fit-content;
-  margin-top:3em;
+  padding-top:3em;
   height: 100%;
   writing-mode: vertical-rl;
   font-family: "noto-sans-pro", sans-serif;
@@ -298,15 +298,16 @@ rt{
   width: $pcCardWidth;
   height: $pcCardHeight;
   background-image:url(../img/makimono.svg);
+  background-size:auto;
   background-repeat:no-repeat;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
-    width: $spCardWidth;
-    height:fit-content;
-    min-height:$spCardHeight;
-    padding:25px 30px 30px 30px;
+    background-image:url(../img/makimono_02.svg);
+    width: $spCardWidth + 10px;
+    height:$spCardHeight + 60px;
+    padding:30px;
   }
 }
 
@@ -319,7 +320,7 @@ rt{
   color:#fff;
   padding: 2px 8px;
   @media screen and (max-width: 960px) {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 .explanation dl:nth-child(2) > dt {
@@ -327,11 +328,11 @@ rt{
 }
 .explanation dd {
   font-size: 1.0rem;
-  line-height: 1.6;
+  line-height: 1.8;
   letter-spacing: 0.05em;
   @media screen and (max-width: 960px) {
-    font-size: 1.1rem;
-    line-height:1.4;
+    font-size: 1.15rem;
+    line-height:1.6;
   }
 }
 
