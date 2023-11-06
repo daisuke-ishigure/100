@@ -227,6 +227,7 @@ main {
 rt {
   font-size: 0.8rem;
   letter-spacing: 0;
+  display: none;
 }
 @media (max-width: 960px) {
   rt {
