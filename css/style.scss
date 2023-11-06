@@ -175,6 +175,8 @@ main {
   writing-mode: vertical-rl;
   font-size: 1.4rem;
   text-align: center;
+  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
+  z-index: 3;
 }
 .card-front dl dd {
   writing-mode: vertical-rl;
@@ -192,11 +194,12 @@ main {
 
 rt{
   font-size:0.8rem;
-  letter-spacing:0;
-  display:none;
   @media (max-width:960px){
     display:none;
   }
+}
+dd rt{
+  font-size:0.6em;
 }
 .card-front img {
   position: absolute;
