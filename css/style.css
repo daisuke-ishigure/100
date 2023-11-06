@@ -68,6 +68,7 @@ body {
   font-family: "Noto Serif JP", serif;
   color: #fff;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 960px) {
   .header h1 {

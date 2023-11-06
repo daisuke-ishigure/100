@@ -63,6 +63,7 @@ body {
   font-family: "Noto Serif JP", serif;
   color: #fff;
   margin-bottom: 5px;
+  cursor:pointer;
   @media screen and (max-width: 960px){
     font-size:1.4rem;
   }
@@ -154,7 +155,7 @@ main {
   background-color: #b82343;
   color: #fff;
 }
-.initial-setting p {
+.initial-setting p{
   width: fit-content;
   margin-top:3em;
   height: 100%;
@@ -299,9 +300,6 @@ rt{
   background-image:url(../img/makimono.svg);
   background-repeat:no-repeat;
   filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
-  // box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
-  // background-color: #F9EDCA;
-  // border: 15px solid #4e3052;
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
@@ -311,6 +309,7 @@ rt{
     padding:25px 30px 30px 30px;
   }
 }
+
 .explanation dt {
   font-family: "Kaisei HarunoUmi", serif;
   font-size: 1.3rem;
