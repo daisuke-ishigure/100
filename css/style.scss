@@ -175,7 +175,7 @@ main {
   writing-mode: vertical-rl;
   font-size: 1.4rem;
   text-align: center;
-  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
+  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
   z-index: 3;
 }
 .card-front dl dd {
@@ -185,7 +185,7 @@ main {
   letter-spacing: 0.2em;
   flex-grow: 1;
   align-items: center;
-  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
+  text-shadow: 0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA,0px 0px 3px #F9EDCA; 
   z-index: 3;
   @media (max-width:960px){
     line-height: 1.8;
@@ -194,12 +194,14 @@ main {
 
 rt{
   font-size:0.8rem;
+  letter-spacing:-0.3em;
   @media (max-width:960px){
     display:none;
   }
 }
 dd rt{
   font-size:0.6em;
+  letter-spacing:-0.1em;
 }
 .card-front img {
   position: absolute;
