@@ -184,7 +184,7 @@ main {
 .initial-setting p {
   width: -moz-fit-content;
   width: fit-content;
-  padding-top: 3em;
+  padding-top: 2.5em;
   height: 100%;
   writing-mode: vertical-rl;
   font-family: "noto-sans-pro", sans-serif;
