@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
   <!-- ヘッダーここから -->
   <header class="header">
@@ -30,10 +32,21 @@
         <option value="misc">その他</option>
       </select>
       <select id="jsonSelector" class="selector"></select>
+      <div id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
   <!-- ヘッダーここまで・メインここから -->
   <main>
+    <div id="sp-menu">
+      <div id="input-container">
+        <input type="text" id="searchInput" placeholder="キーワードで検索してください。">
+      </div>
+      <div id="table"></div>
+    </div>
     <div class="card-item">
       <div class="card-front">
         <div class="initial-setting">
@@ -51,6 +64,7 @@
         <p>こちらには歌の補足説明と<br>歌人についての説明が表示されます。</p>
       </div>
     </div>
+    <p id="page-top"><a href="#">上へ戻る</a></p>
   </main>
   <!-- メインここまで・フッターここから -->
   <footer>
@@ -60,4 +74,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
+
 </html>
