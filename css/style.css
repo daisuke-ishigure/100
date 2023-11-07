@@ -197,6 +197,7 @@ main {
   border-collapse: collapse;
   border: 1px solid #333;
   font-size: 1.2rem;
+  z-index: 10;
 }
 #sp-menu table td {
   border: 1px solid #333;
