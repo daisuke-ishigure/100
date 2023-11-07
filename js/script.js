@@ -267,7 +267,10 @@ $('#burger').on('click',function(){
   $('#sp-menu').toggleClass('drawer');
 });
 
-
+$('#close').on('click',function(){
+  $('#burger').removeClass('active');
+  $('#sp-menu').toggleClass('drawer');
+})
 ////////////////////////////////////////////////////////////
 // sp-menu
 ////////////////////////////////////////////////////////////
