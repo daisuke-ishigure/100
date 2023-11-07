@@ -29,6 +29,7 @@ html {
 @media screen and (max-width: 960px) {
   html {
     font-size: 13px;
+    touch-action: manipulation;
   }
 }
 
@@ -119,14 +120,6 @@ option {
   border: 1px solid #333;
   background: #fff;
   position: relative;
-  z-index: 5;
-}
-@media (max-width: 960px) {
-  #burger.active {
-    position: absolute;
-    top: 2em;
-    left: 326px;
-  }
 }
 #burger span {
   position: absolute;
@@ -183,7 +176,7 @@ main {
   position: absolute;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 2em;
+  padding: 2em 1em;
   height: -moz-fit-content;
   height: fit-content;
   opacity: 100%;
@@ -200,13 +193,10 @@ main {
     width: 100%;
   }
 }
-#sp-menu rt {
-  font-size: 0.7em;
-  letter-spacing: 0;
-}
 #sp-menu table {
   border-collapse: collapse;
   border: 1px solid #333;
+  font-size: 1.2rem;
 }
 #sp-menu table td {
   border: 1px solid #333;
@@ -223,15 +213,17 @@ main {
   }
 }
 #sp-menu table td:nth-child(2) {
-  padding: 3% 3% 0%;
+  padding: 1.5% 1.5% 0%;
   width: 350px;
 }
 @media (max-width: 960px) {
   #sp-menu table td:nth-child(2) {
-    width: 300px;
+    width: 310px;
   }
 }
 #sp-menu table td:nth-child(2) rt {
+  font-size: 0.5em;
+  letter-spacing: 0;
   display: block;
 }
 
@@ -246,7 +238,43 @@ main {
 }
 
 #input-container {
+  width: 389px;
   text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (max-width: 960px) {
+  #input-container {
+    width: 342px;
+  }
+}
+
+#close {
+  border: 1px solid #333;
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#close span {
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  inset: 0;
+  margin: auto;
+  background-color: #333;
+  transition: 0.3s;
+}
+#close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+#close span:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 #searchInput {
@@ -258,7 +286,7 @@ main {
 }
 @media (max-width: 960px) {
   #searchInput {
-    width: 290px;
+    width: 300px;
   }
 }
 
@@ -463,8 +491,8 @@ dd rt {
   #next,
   #back {
     height: 60px;
-    width: 25px;
-    right: -25px;
+    width: 50px;
+    right: -35px;
   }
 }
 
@@ -473,7 +501,7 @@ dd rt {
 }
 @media screen and (max-width: 960px) {
   #back {
-    left: -25px;
+    left: -35px;
   }
 }
 
