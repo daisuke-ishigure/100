@@ -270,6 +270,7 @@ $('#burger').on('click',function(){
 $('#close').on('click',function(){
   $('#burger').removeClass('active');
   $('#sp-menu').toggleClass('drawer');
+  clearSearch();
 })
 ////////////////////////////////////////////////////////////
 // sp-menu
