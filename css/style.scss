@@ -325,11 +325,14 @@ main {
     0px 0px 3px #f9edca,
     0px 0px 3px #f9edca;
   z-index: 3;
+  rt{
+    letter-spacing:0;
+  }
 }
 .card-front dl dd {
   writing-mode: vertical-rl;
   font-size: 1.6rem;
-  line-height: 1.9;
+  line-height: 1.95;
   letter-spacing: 0.2em;
   flex-grow: 1;
   align-items: center;
