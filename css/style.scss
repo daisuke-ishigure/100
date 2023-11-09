@@ -187,6 +187,7 @@ main {
       &:nth-child(2){
         padding:1.5% 1.5% 0%;
         width:360px;
+        border-right:none;
         @media (max-width:960px){
           width:310px;
         }
@@ -195,6 +196,12 @@ main {
           letter-spacing:0;
           display:block;
         }
+      }
+      &:nth-child(3){
+        color:transparent;
+        width:0;
+        font-size:0;
+        border-left:none;
       }
     }
   }

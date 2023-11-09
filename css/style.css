@@ -216,6 +216,7 @@ main {
 #sp-menu table td:nth-child(2) {
   padding: 1.5% 1.5% 0%;
   width: 360px;
+  border-right: none;
 }
 @media (max-width: 960px) {
   #sp-menu table td:nth-child(2) {
@@ -226,6 +227,12 @@ main {
   font-size: 0.5em;
   letter-spacing: 0;
   display: block;
+}
+#sp-menu table td:nth-child(3) {
+  color: transparent;
+  width: 0;
+  font-size: 0;
+  border-left: none;
 }
 
 #sp-menu.drawer {
