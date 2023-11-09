@@ -135,14 +135,13 @@ jsonSelector.addEventListener("change", () => {
         <table>
         
       `)
-      
+
     })/* jsonデータを取り込んだときの動作ここまで */
 
     .catch((error) => console.error("Error fetching JSON:", error));
 });
 
 let currentPoemIndex = 0;
-
 // Function to display the poem with a given index
 function displayPoem(index) {
   // ... (display code remains the same)
@@ -176,7 +175,7 @@ $(function () {
 ////////////////////////////////////////////////////////////
 //前へボタンの実装
 
-$(function(){
+$(function () {
   $('#back').on('click', function (event) {
     //「歌人を選んでください」のoption要素を削除する
     removeOptionByValue(jsonSelector, "all");
@@ -200,17 +199,19 @@ $(function(){
 
 /* 前へボタン、戻るボタンの誤動作を防止するため、
 ダブルクリックの親要素への伝播をstopさせる */
-$(function(){
-  $('#back').on('click',function(event){
+$(function () {
+  $('#back').on('click', function (event) {
     event.stopPropagation();
   });
 });
-$(function(){
-  $('#next').on('click',function(event){
+$(function () {
+  $('#next').on('click', function (event) {
     event.stopPropagation();
   });
 });
 /* 親要素への伝播をstopさせる　ここまで */
+
+
 
 
 fetch(jsonAddress)
@@ -245,7 +246,7 @@ fetch(jsonAddress)
 ////////////////////////////////////////////////////////////
 function removeOptionByValue(selector, valueToRemove) {
   // selectorから指定した値のoption要素を取得します
-  const optionToRemove = selector.querySelector(`option[value="${valueToRemove}"]`);
+  const optionToRemove = selector.querySelector(`option[value = "${valueToRemove}"]`);
   // option要素が存在する場合に削除します
   if (optionToRemove) {
     selector.removeChild(optionToRemove);
@@ -300,6 +301,10 @@ fetch(jsonAddress)
       wakaTd.innerHTML = poem.first.replace(/<br\s*\/?>/g, " ") + '<br>' + poem.second.replace(/<br\s*\/?>/g, " ")+ '<span class="small">'  +  poem.name + '（' + poem.date + '）'+ '</span>';
       tr.appendChild(wakaTd);
 
+      let kanaTd = document.createElement('td');
+      kanaTd.innerHTML = poem.yomihuda;
+      tr.appendChild(kanaTd);
+
       // tr要素をテーブルに追加
       table.appendChild(tr);
     }
@@ -334,12 +339,20 @@ searchInput.addEventListener('keyup', () => {
 
 // 検索を初期化する(番号をクリックして、sp-menuを閉じるときに使う）
 function clearSearch() {
-  searchInput.value = ''; // searchInputの値を空にする
+  // tableRowsが未定義の場合は何もせず関数を終了する
+  if (!tableRows) {
+    return;
+  }
+
+  // 検索欄の値を空にする
+  searchInput.value = '';
+
   // テーブルの全ての行を表示する
   for (let i = 0; i < tableRows.length; i++) {
     tableRows[i].style.display = '';
   }
 }
+
 
 
 ////////////////////////////////////////////////////////////
