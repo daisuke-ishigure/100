@@ -300,10 +300,6 @@ fetch(jsonAddress)
       wakaTd.innerHTML = poem.first.replace(/<br\s*\/?>/g, " ") + '<br>' + poem.second.replace(/<br\s*\/?>/g, " ")+ '<span class="small">'  +  poem.name + '（' + poem.date + '）'+ '</span>';
       tr.appendChild(wakaTd);
 
-      let kanaTd = document.createElement('td');
-      kanaTd.innerHTML = poem.yomihuda;
-      tr.appendChild(kanaTd);
-
       // tr要素をテーブルに追加
       table.appendChild(tr);
     }
