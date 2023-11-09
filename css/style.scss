@@ -156,6 +156,7 @@ main {
   width:fit-content;
   padding:2em 1em;
   height:fit-content;
+  min-height:100vh;
   opacity:100%;
   background:#f7f1e0;
   border-right:1px solid #333;
@@ -163,7 +164,7 @@ main {
   left:-100%;
   z-index:2;
   font-family: "noto-sans-pro", sans-serif;
-  line-height:2.5;
+  line-height:1.9;
   @media (max-width:960px){
     width:100%;
   }
@@ -171,7 +172,7 @@ main {
   table{
     border-collapse:collapse;
     border:1px solid #333;
-    font-size:1.2rem;
+    font-size:1.17rem;
     z-index:10;
     td{
       border:1px solid #333;
@@ -187,6 +188,7 @@ main {
       &:nth-child(2){
         padding:1.5% 1.5% 0%;
         width:360px;
+        border-right:none;
         @media (max-width:960px){
           width:310px;
         }
@@ -195,6 +197,12 @@ main {
           letter-spacing:0;
           display:block;
         }
+      }
+      &:nth-child(3){/* 検索用の文字（非表示） */
+        color:transparent;
+        width:0;
+        font-size:0;
+        border-left:none;
       }
     }
   }
