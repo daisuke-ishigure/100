@@ -148,7 +148,7 @@ jsonSelector.addEventListener("change", () => {
        `);
       $('.explanation').append(`
       <dl>
-        <dt>補足説明</dt>
+        <dt>歌について</dt>
         <dd>${bg}</dd>
       </dl>
       <dl>
