@@ -622,6 +622,7 @@ footer p {
   padding:20px;
   border:2px solid #4e3052;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  font-size:1.2rem;
   @media(min-width:960px){
     display:none; 
   }
@@ -632,7 +633,7 @@ footer p {
   input{
     position:relative;
     height:30px;
-    width:90px;
+    width:60px;
     background: #e6e6e6;
     -webkit-appearance: none;/* 要素がブラウザのデフォルトの外観を持たないように指定 */
     -moz-appearance: none;
@@ -651,7 +652,7 @@ footer p {
       transition:0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
     &:checked::before{
-      left:60px;
+      left:30px;
     }
   }
 }
