@@ -242,7 +242,7 @@ main {
 
 .small {
   display: block;
-  font-size: 2em;
+  font-size: 0.8em;
   text-align: right;
 }
 
@@ -527,7 +527,7 @@ dd rt {
   cursor: pointer;
 }
 
-/* -----補足説明----- */
+/* -----巻き物：補足説明----- */
 .explanation {
   width: 380px;
   height: 550px;
@@ -571,6 +571,9 @@ dd rt {
   font-size: 1rem;
   line-height: 1.8;
   letter-spacing: 0.05em;
+}
+.explanation dd rt {
+  letter-spacing: 0;
 }
 @media screen and (max-width: 960px) {
   .explanation dd {

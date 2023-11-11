@@ -212,7 +212,7 @@ main {
 }
 .small{
   display:block;
-  font-size:2em;
+  font-size:0.8em;
   text-align: right;
 }
 #input-container {
@@ -472,7 +472,7 @@ dd rt {
   cursor: pointer;
 }
 
-/* -----補足説明----- */
+/* -----巻き物：補足説明----- */
 .explanation {
   width: $pcCardWidth;
   height: $pcCardHeight;
@@ -509,6 +509,9 @@ dd rt {
   font-size: 1rem;
   line-height: 1.8;
   letter-spacing: 0.05em;
+  rt{
+    letter-spacing:0;
+  }
   @media screen and (max-width: 960px) {
     font-size: 1.15rem;
     line-height: 1.6;
