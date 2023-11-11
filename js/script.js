@@ -97,10 +97,11 @@ jsonSelector.addEventListener("change", () => {
     .then((response) => response.json())
     .then((data) => {/* jsonデータを取り込んだときの動作ここから */
       const selectedData = data[selectedDataSet];
-      const torihuda = selectedData.torihuda;
+      const yomihuda = selectedData.yomihuda;
       const first = selectedData.first;
       const second = selectedData.second;
       const name = selectedData.name;
+      const nameKana = selectedData.nameKana;
       const theme = selectedData.theme;
       const translation = selectedData.translation;
       const bg = selectedData.background;
@@ -109,12 +110,36 @@ jsonSelector.addEventListener("change", () => {
 
       // HTMLを更新
       $('.card-front').append(`
-          <dl>
-            <dt>${name}</dt>
-            <dd>${first}<br>${second}</dd>
-          </dl>
-          <img src="../img/${number}.svg" alt="${name}">
-        `);
+      <dl>
+        <dt id="poemName">${name}</dt>
+        <dd id="poemContent">${first}<br>${second}</dd>
+      </dl>
+      <img src="../img/${number}.svg" alt="${name}">
+      `);
+
+      // チェックボックスの変更時にコンテンツを即座に更新
+      $('#toggle').on('change', function () {
+        updatePoemContent();
+        updateNameContent();
+      });
+
+      // 初回読み込み時にも更新
+      updatePoemContent();
+      updateNameContent();
+
+      // 選択されたデータを表示する関数
+      function updatePoemContent() {
+        const poemContent = $('#toggle').is(':checked') ? yomihuda : `${first}<br>${second}`;
+        /* ?はif elseの意味 */
+        $('#poemContent').html(poemContent);
+      }
+
+      function updateNameContent() {
+        const poemName = $('#toggle').is(':checked') ? nameKana : `${name}`;
+        /* ?はif elseの意味 */
+        $('#poemName').html(poemName);
+      }
+
       $('.card-back').append(`
       <dl>
       <dt>歌の意味</dt>
@@ -133,9 +158,7 @@ jsonSelector.addEventListener("change", () => {
       `)
       $('#sp_menu').append(`
         <table>
-        
       `)
-
     })/* jsonデータを取り込んだときの動作ここまで */
 
     .catch((error) => console.error("Error fetching JSON:", error));
@@ -256,19 +279,19 @@ function removeOptionByValue(selector, valueToRemove) {
 ////////////////////////////////////////////////////////////
 // 見出しをクリックしてリロード
 ////////////////////////////////////////////////////////////
-$('h1').on('click', function(){
+$('h1').on('click', function () {
   location.reload();
 });
 
 ////////////////////////////////////////////////////////////
 // ハンバーガーメニュー
 ////////////////////////////////////////////////////////////
-$('#burger').on('click',function(){
+$('#burger').on('click', function () {
   $(this).toggleClass('active');
   $('#sp-menu').toggleClass('drawer');
 });
 
-$('#close').on('click',function(){
+$('#close').on('click', function () {
   $('#burger').removeClass('active');
   $('#sp-menu').toggleClass('drawer');
   clearSearch();
@@ -285,7 +308,7 @@ fetch(jsonAddress)
     let table = document.createElement('table');
     // table.id = 'myTable'; // テーブルのIDを設定
 
-    
+
     // テーブルの各行を生成
     for (let key in data) {
       let poem = data[key];
@@ -298,11 +321,11 @@ fetch(jsonAddress)
       tr.appendChild(numberTd);
 
       let wakaTd = document.createElement('td');
-      wakaTd.innerHTML = poem.first.replace(/<br\s*\/?>/g, " ") + '<br>' + poem.second.replace(/<br\s*\/?>/g, " ")+ '<span class="small">'  +  poem.name + '（' + poem.date + '）'+ '</span>';
+      wakaTd.innerHTML = poem.first.replace(/<br\s*\/?>/g, " ") + '<br>' + poem.second.replace(/<br\s*\/?>/g, " ") + '<span class="small">' + poem.name + '（' + poem.date + '）' + '</span>';
       tr.appendChild(wakaTd);
 
       let kanaTd = document.createElement('td');
-      kanaTd.innerHTML = poem.yomihuda;
+      kanaTd.innerHTML = poem.yomihuda.replace(/<rt>.*?<\/rt>/g, '');/* rt要素を削除する */;
       tr.appendChild(kanaTd);
 
       // tr要素をテーブルに追加
@@ -358,38 +381,49 @@ function clearSearch() {
 ////////////////////////////////////////////////////////////
 // 番号をクリックしたときのリンク処理
 ////////////////////////////////////////////////////////////
-  document.addEventListener('click', function(event) {
-    if (event.target.tagName === 'TD' && event.target.parentNode.firstChild === event.target) {
-      let linkNumber = parseInt(event.target.textContent.trim());
-      console.log('クリックされた数字:', linkNumber);
-      themeSelector.value = 'all';
-      themeSelector.dispatchEvent(new Event('change'));
-      jsonSelector.value = linkNumber;
-      jsonSelector.dispatchEvent(new Event('change'));
-      $('#sp-menu').removeClass('drawer');
-      $('#burger').removeClass('active');
-      $('body, html').animate({ scrollTop: 0 }, 500);
-      clearSearch();
-    }
-  });
+document.addEventListener('click', function (event) {
+  if (event.target.tagName === 'TD' && event.target.parentNode.firstChild === event.target) {
+    let linkNumber = parseInt(event.target.textContent.trim());
+    console.log('クリックされた数字:', linkNumber);
+    themeSelector.value = 'all';
+    themeSelector.dispatchEvent(new Event('change'));
+    jsonSelector.value = linkNumber;
+    jsonSelector.dispatchEvent(new Event('change'));
+    $('#sp-menu').removeClass('drawer');
+    $('#burger').removeClass('active');
+    $('body, html').animate({ scrollTop: 0 }, 500);
+    clearSearch();
+  }
+});
 
-  
+
 
 ////////////////////////////////////////////////////////////
 // トップに戻る
 ////////////////////////////////////////////////////////////
-  $(function(){
-    var pagetop = $('#page-top');
-    pagetop.hide();
-    $(window).scroll(function () {
-       if ($(this).scrollTop() > 100) {
-            pagetop.fadeIn();
-       } else {
-            pagetop.fadeOut();
-       }
-    });
-    pagetop.click(function () {
-       $('body, html').animate({ scrollTop: 0 }, 500);
-       return false;
-    });
+$(function () {
+  var pagetop = $('#page-top');
+  pagetop.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      pagetop.fadeIn();
+    } else {
+      pagetop.fadeOut();
+    }
   });
+  pagetop.click(function () {
+    $('body, html').animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+});
+
+
+
+
+      
+
+    
+    
+    
+    
+    
