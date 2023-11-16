@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  min-height: 60px;
   padding: 0 5%;
   background-image: url(../img/purple_pattern.png);
   background-repeat: repeat;
@@ -59,7 +59,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   .header {
-    height: 100px;
+    min-height: 100px;
     flex-direction: column;
     justify-content: center;
     gap: 0.25em;
@@ -592,9 +592,12 @@ dd rt {
 フッター
 ------------------------- */
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px 5%;
   width: 100%;
-  height: auto;
+  height: 60px;
   font-family: "noto-sans-pro", sans-serif;
   background-image: url(../img/purple_pattern.png);
   background-repeat: repeat;
@@ -608,7 +611,6 @@ footer {
 }
 
 footer p {
-  text-align: center;
   color: #fff;
   text-shadow: 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052, 0px 0px 3px #4e3052;
   text-align: center;
