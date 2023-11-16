@@ -31,7 +31,7 @@
   "3":{
     "number":"3",
     "first":"あしびきの<br><ruby>山鳥<rt>やまどり</rt></ruby>の<ruby>尾<rt>お</rt></ruby>の<br>しだり<ruby>尾<rt>お</rt></ruby>の",
-    "second":"ながながし<ruby>夜<rt>よ</rt></ruby>を<br>ひとりかも<ruby>寝<rt>ね</rt></ruby>む",
+    "second":"ながながし<ruby>夜<rt>よ</rt></ruby>を<br>ひとりかも<ruby>寝<rt>ね</rt></ruby><ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>柿本人麻呂<rt>かきのもとひとまろ</rt></ruby>",
     "nameKana":"かきのもとひとまろ",
     "date":"生没年不詳",
@@ -58,7 +58,7 @@
   },
   "5":{
     "number":"5",
-    "first":"<ruby>奥山<rt>おくやま</rt></ruby>に<br>もみぢふみわけ<br>なく<ruby>鹿<rt>しか</rt></ruby>の",
+    "first":"<ruby>奥山<rt>おくやま</rt></ruby>に<br><ruby>紅葉<rt>もみじ</rt></ruby><ruby>踏<rt>ふ</rt></ruby>み<ruby>分<rt>わ</rt></ruby>け<br><ruby>鳴<rt>な</rt></ruby>く<ruby>鹿<rt>しか</rt></ruby>の",
     "second":"<ruby>声<rt>こえ</rt></ruby><ruby>聞<rt>き</rt></ruby>く<ruby>時<rt>とき</rt></ruby>ぞ<br><ruby>秋<rt>あき</rt></ruby>はかなしき",
     "name":"<ruby>猿丸太夫<rt>さるまるだゆう</rt></ruby>",
     "nameKana":"さるまるだゆう",
@@ -87,7 +87,7 @@
   "7":{
     "number":"7",
     "first":"<ruby>天<rt>あま</rt></ruby>の<ruby>原<rt>はら</rt></ruby><br>ふりさけみれば<br><ruby>春日<rt>かすが</rt></ruby>なる",
-    "second":"<ruby>三笠<rt>みかさ</rt></ruby>の<ruby>山<rt>やま</rt></ruby>に<br>いでし<ruby>月<rt>つき</rt></ruby>かも",
+    "second":"<ruby>三笠<rt>みかさ</rt></ruby>の<ruby>山<rt>やま</rt></ruby>に<br><ruby>出<rt>い</rt></ruby>でし<ruby>月<rt>つき</rt></ruby>かも",
     "name":"<ruby>阿倍仲麻呂<rt>あべのなかまろ</rt></ruby>",
     "nameKana":"あべのなかまろ",
     "date":"698年頃～770年",
@@ -101,7 +101,7 @@
   "8":{
     "number":"8",
     "first":"わが<ruby>庵<rt>いお</rt></ruby>は<br><ruby>都<rt>みやこ</rt></ruby>の<ruby>辰巳<rt>たつみ</rt></ruby><br>しかぞすむ",
-    "second":"<ruby>世<rt>よ</rt></ruby>をうぢ<ruby>山<rt>やま</rt></ruby>と<br><ruby>人<rt>ひと</rt></ruby>はいふなり",
+    "second":"<ruby>世<rt>よ</rt></ruby>をう<ruby>ぢ<rt>じ</rt></ruby><ruby>山<rt>やま</rt></ruby>と<br><ruby>人<rt>ひと</rt></ruby>はい<ruby>ふ<rt>う</rt></ruby>なり",
     "name":"<ruby>喜撰法師<rt>きせんほうし</rt></ruby>",
     "nameKana":"きせんほうし",
     "date":"生没年不詳",
@@ -114,7 +114,7 @@
   },
   "9":{
     "number":"9",
-    "first":"<ruby>花<rt>はな</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>は<br>うつりにけりな<br>いたづらに",
+    "first":"<ruby>花<rt>はな</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>は<br>うつりにけりな<br>いた<ruby>づ<rt>ず</rt></ruby>らに",
     "second":"わが<ruby>身<rt>み</rt></ruby>よにふる<br>ながめせしまに",
     "name":"<ruby>小野小町<rt>おののこまち</rt></ruby>",
     "nameKana":"おののこまち",
@@ -142,7 +142,7 @@
   },
   "11":{
     "number":"11",
-    "first":"わたの<ruby>原<rt>はら</rt></ruby><br><ruby>八十島<rt>やそしま</rt></ruby>かけて<br>こぎいでぬと",
+    "first":"わたの<ruby>原<rt>はら</rt></ruby><br><ruby>八十島<rt>やそしま</rt></ruby>かけて<br><ruby>漕<rt>こ</rt></ruby>ぎ<ruby>出<rt>い</rt></ruby>でぬと",
     "second":"<ruby>人<rt>ひと</rt></ruby>にはつげよ<br>あまのつり<ruby>舟<rt>ぶね</rt></ruby>",
     "name":"<ruby>参議篁<rt>さんぎたかむら</rt></ruby>",
     "nameKana":"さんぎたかむら",
@@ -156,8 +156,8 @@
   },
   "12":{
     "number":"12",
-    "first":"<ruby>天<rt>あま</rt></ruby>つ<ruby>風<rt>かぜ</rt></ruby><br><ruby>雲<rt>くも</rt></ruby>のかよひ<ruby>路<rt>じ</rt></ruby><br><ruby>吹<rt>ふ</rt></ruby>きとぢよ",
-    "second":"をとめの姿<br>しばしとどめむ",
+    "first":"<ruby>天<rt>あま</rt></ruby>つ<ruby>風<rt>かぜ</rt></ruby><br><ruby>雲<rt>くも</rt></ruby>のかよ<ruby>ひ<rt>い</rt></ruby><ruby>路<rt>じ</rt></ruby><br><ruby>吹<rt>ふ</rt></ruby>きと<ruby>ぢ<rt>じ</rt></ruby>よ",
+    "second":"をとめの<ruby>姿<rt>すがた</rt></ruby><br>しばしとどめ<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>僧正遍昭<rt>そうじょうへんじょう</rt></ruby>",
     "nameKana":"そうじょうへんじょう",
     "date":"816年～890年",
@@ -170,7 +170,7 @@
   },
   "13":{
     "number":"13",
-    "first":"つくばねの<br><ruby>峰<rt>みね</rt></ruby>よりおつる<br>みなの<ruby>川<rt>がわ</rt></ruby>",
+    "first":"<ruby>筑波嶺<rt>つくばね</rt></ruby>の<br><ruby>峰<rt>みね</rt></ruby>より<ruby>落<rt>お</rt></ruby>つる<br>みなの<ruby>川<rt>がわ</rt></ruby>",
     "second":"<ruby>恋<rt>こい</rt></ruby>ぞつもりて<br><ruby>淵<rt>ふち</rt></ruby>となりぬる",
     "name":"<ruby>陽成院<rt>ようぜいいん</rt></ruby>",
     "nameKana":"ようぜいいん",
@@ -184,7 +184,7 @@
   },
   "14":{
     "number":"14",
-    "first":"<ruby>陸奥<rt>みちのく</rt></ruby>の<br>しのぶもぢずり<br><ruby>誰<rt>たれ</rt></ruby>ゆ<ruby>ゑ<rt>え</rt></ruby>に",
+    "first":"<ruby>陸奥<rt>みちのく</rt></ruby>の<br>しのぶも<ruby>ぢ<rt>じ</rt></ruby>ずり<br><ruby>誰<rt>たれ</rt></ruby>ゆ<ruby>ゑ<rt>え</rt></ruby>に",
     "second":"<ruby>乱<rt>みだ</rt></ruby>れそめにし<br><ruby>我<rt>われ</rt></ruby>ならなくに",
     "name":"<ruby>河原左大臣<rt>かわらのさだいじん</rt></ruby>",
     "nameKana":"かわらのさだいじん",
@@ -212,8 +212,8 @@
   },
   "16":{
     "number":"16",
-    "first":"<ruby>立<rt>た</rt></ruby>ちわかれ<br>いなばの<ruby>山<rt>やま</rt></ruby>の<br><ruby>峰<rt>みね</rt></ruby>に<ruby>生<rt>お</rt></ruby>ふる",
-    "second":"まつとし<ruby>聞<rt>き</rt></ruby>かば<br><ruby>今<rt>いま</rt></ruby><ruby>帰<rt>かえ</rt></ruby>りこむ",
+    "first":"<ruby>立<rt>た</rt></ruby>ち<ruby>別<rt>わか</rt></ruby>れ<br>いなばの<ruby>山<rt>やま</rt></ruby>の<br><ruby>峰<rt>みね</rt></ruby>に<ruby>生<rt>お</rt></ruby><ruby>ふ<rt>う</rt></ruby>る",
+    "second":"まつとし<ruby>聞<rt>き</rt></ruby>かば<br><ruby>今<rt>いま</rt></ruby><ruby>帰<rt>かえ</rt></ruby>りこ<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>中納言行平<rt>ちゅうなごんゆきひら</rt></ruby>",
     "nameKana":"ちゅうなごんゆきひら",
     "date":"818年～893年",
@@ -240,8 +240,8 @@
   },
   "18":{
     "number":"18",
-    "first":"<ruby>住<rt>すみ</rt></ruby>の<ruby>江<rt>え</rt></ruby>の<br><ruby>岸<rt>きし</rt></ruby>による<ruby>波<rt>なみ</rt></ruby><br>よるさへや",
-    "second":"<ruby>夢<rt>ゆめ</rt></ruby>のかよひ<ruby>路<rt>じ</rt></ruby><br><ruby>人目<rt>ひとめ</rt></ruby>よくらむ",
+    "first":"<ruby>住<rt>すみ</rt></ruby>の<ruby>江<rt>え</rt></ruby>の<br><ruby>岸<rt>きし</rt></ruby>による<ruby>波<rt>なみ</rt></ruby><br>よるさ<ruby>へ<rt>え</rt></ruby>や",
+    "second":"<ruby>夢<rt>ゆめ</rt></ruby>のかよひ<ruby>路<rt>じ</rt></ruby><br><ruby>人目<rt>ひとめ</rt></ruby>よくら<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>藤原敏行朝臣<rt>ふじわらのとしゆきあそん</rt></ruby>",
     "nameKana":"ふじわらのとしゆきあそん",
     "date":"生年不詳～901年頃",
@@ -255,7 +255,7 @@
   "19":{
     "number":"19",
     "first":"<ruby>難波潟<rt>なにわがた</rt></ruby><br>みじかき<ruby>葦<rt>あし</rt></ruby>の<br>ふしのまも",
-    "second":"あはでこの<ruby>世<rt>よ</rt></ruby>を<br>すぐしてよとや",
+    "second":"<ruby>逢<rt>あ</rt></ruby><ruby>は<rt>わ</rt></ruby>でこの<ruby>世<rt>よ</rt></ruby>を<br><ruby>過<rt>す</rt></ruby>ぐしてよとや",
     "name":"<ruby>伊勢<rt>いせ</rt></ruby>",
     "nameKana":"いせ",
     "date":"生没年不詳",
@@ -269,7 +269,7 @@
   "20":{
     "number":"20",
     "first":"わびぬれば<br>いまはたおなじ<br><ruby>難波<rt>なにわ</rt></ruby>なる",
-    "second":"<ruby>身<rt>み</rt></ruby>をつくしても<br><ruby>逢<rt>あ</rt></ruby>はむとぞ<ruby>思<rt>おも</rt></ruby>ふ",
+    "second":"<ruby>身<rt>み</rt></ruby>をつくしても<br><ruby>逢<rt>あ</rt></ruby><ruby>は<rt>わ</rt></ruby><ruby>む<rt>ん</rt></ruby>とぞ<ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby>",
     "name":"<ruby>元良親王<rt>もとよししんのう</rt></ruby>",
     "nameKana":"もとよししんのう",
     "date":"890年～943年",
@@ -282,7 +282,7 @@
   },
   "21":{
     "number":"21",
-    "first":"<ruby>今<rt>いま</rt></ruby>こむと<br>いひしばかりに<br><ruby>長月<rt>ながつき</rt></ruby>の",
+    "first":"<ruby>今<rt>いま</rt></ruby>こ<ruby>む<rt>ん</rt></ruby>と<br>い<ruby>ひ<rt>い</rt></ruby>しばかりに<br><ruby>長月<rt>ながつき</rt></ruby>の",
     "second":"<ruby>有明<rt>ありあけ</rt></ruby>の<ruby>月<rt>つき</rt></ruby>を<br><ruby>待<rt>ま</rt></ruby>ち<ruby>出<rt>い</rt></ruby>でつるかな",
     "name":"<ruby>素性法師<rt>そせいほうし</rt></ruby>",
     "nameKana":"そせいほうし",
@@ -297,7 +297,7 @@
   "22":{
     "number":"22",
     "first":"<ruby>吹<rt>ふ</rt></ruby>くからに<br><ruby>秋<rt>あき</rt></ruby>の<ruby>草木<rt>くさき</rt></ruby>の<br>しをるれば",
-    "second":"むべ<ruby>山風<rt>やまかぜ</rt></ruby>を<br><ruby>嵐<rt>あらし</rt></ruby>といふらむ",
+    "second":"むべ<ruby>山風<rt>やまかぜ</rt></ruby>を<br><ruby>嵐<rt>あらし</rt></ruby>とい<ruby>ふ<rt>う</rt></ruby>ら<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>文屋康秀<rt>ふんやのやすひで</rt></ruby>",
     "nameKana":"ふんやのやすひで",
     "date":"生没年不詳",
@@ -324,7 +324,7 @@
   },
   "24":{
     "number":"24",
-    "first":"このたびは<br><ruby>幣<rt>ぬさ</rt></ruby>もとりあへず<br><ruby>手向山<rt>たむけやま</rt></ruby>",
+    "first":"このたびは<br><ruby>幣<rt>ぬさ</rt></ruby>もとりあ<ruby>へ<rt>え</rt></ruby>ず<br><ruby>手向山<rt>たむけやま</rt></ruby>",
     "second":"もみぢのにしき<br><ruby>神<rt>かみ</rt></ruby>のまにまに",
     "name":"<ruby>菅家<rt>かんけ</rt></ruby>",
     "nameKana":"かんけ",
@@ -338,7 +338,7 @@
   },
   "25":{
     "number":"25",
-    "first":"<ruby>名<rt>な</rt></ruby>にし<ruby>負<rt>お</rt></ruby>はば<br><ruby>逢坂山<rt>おうさかやま</rt></ruby>の<br>さねかづら",
+    "first":"<ruby>名<rt>な</rt></ruby>にし<ruby>負<rt>お</rt></ruby>はば<br><ruby>逢坂山<rt>おうさかやま</rt></ruby>の<br>さねか<ruby>づ<rt>ず</rt></ruby>ら",
     "second":"<ruby>人<rt>ひと</rt></ruby>にしられで<br><ruby>来<rt>く</rt></ruby>るよしもがな",
     "name":"<ruby>三条右大臣<rt>さんじょうのうだいじん</rt></ruby>",
     "nameKana":"さんじょうのうだいじん",
@@ -352,8 +352,8 @@
   },
   "26":{
     "number":"26",
-    "first":"<ruby>小倉山<rt>おぐらやま</rt></ruby><br><ruby>峰<rt>みね</rt></ruby>のもみぢ<ruby>葉<rt>は</rt></ruby><br><ruby>心<rt>こころ</rt></ruby>あらば",
-    "second":"<ruby>今<rt>いま</rt></ruby>ひとたびの<br>みゆき<ruby>待<rt>ま</rt></ruby>たなむ",
+    "first":"<ruby>小倉山<rt>おぐらやま</rt></ruby><br><ruby>峰<rt>みね</rt></ruby>のもみ<ruby>ぢ<rt>じ</rt></ruby><ruby>葉<rt>は</rt></ruby><br><ruby>心<rt>こころ</rt></ruby>あらば",
+    "second":"<ruby>今<rt>いま</rt></ruby>ひとたびの<br>みゆき<ruby>待<rt>ま</rt></ruby>たな<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>貞信公<rt>ていしんこう</rt></ruby>",
     "nameKana":"ていしんこう",
     "date":"880年～949年",
@@ -366,8 +366,8 @@
   },
   "27":{
     "number":"27",
-    "first":"みかの<ruby>原<rt>はら</rt></ruby><br>わきて<ruby>流<rt>なが</rt></ruby>るる<br>いづみ<ruby>川<rt>がわ</rt></ruby>",
-    "second":"いつ<ruby>見<rt>み</rt></ruby>きとてか<br><ruby>恋<rt>こい</rt></ruby>しかるらむ",
+    "first":"みかの<ruby>原<rt>はら</rt></ruby><br>わきて<ruby>流<rt>なが</rt></ruby>るる<br>い<ruby>づ<rt>ず</rt></ruby>み<ruby>川<rt>がわ</rt></ruby>",
+    "second":"いつ<ruby>見<rt>み</rt></ruby>きとてか<br><ruby>恋<rt>こい</rt></ruby>しかるら<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>中納言兼輔<rt>ちゅうなごんかねすけ</rt></ruby>",
     "nameKana":"ちゅうなごんかねすけ",
     "date":"877年～933年",
@@ -381,7 +381,7 @@
   "28":{
     "number":"28",
     "first":"<ruby>山里<rt>やまざと</rt></ruby>は<br><ruby>冬<rt>ふゆ</rt></ruby>ぞさびしさ<br>まさりける",
-    "second":"<ruby>人目<rt>ひとめ</rt></ruby>も<ruby>草<rt>くさ</rt></ruby>も<br>かれぬと<ruby>思<rt>おも</rt></ruby>へば",
+    "second":"<ruby>人目<rt>ひとめ</rt></ruby>も<ruby>草<rt>くさ</rt></ruby>も<br>かれぬと<ruby>思<rt>おも</rt></ruby><ruby>へ<rt>え</rt></ruby>ば",
     "name":"<ruby>源宗于朝臣<rt>みなもとのむねゆきあそん</rt></ruby>",
     "nameKana":"みなもとのむねゆきあそん",
     "date":"生年不詳～939年",
@@ -394,8 +394,8 @@
   },
   "29":{
     "number":"29",
-    "first":"<ruby>心当<rt>こころあ</rt></ruby>てに<br><ruby>折<rt>お</rt></ruby>らばや<ruby>折<rt>お</rt></ruby>らむ<br><ruby>初霜<rt>はつしも</rt></ruby>の",
-    "second":"おきまどはせる<br><ruby>白菊<rt>しらぎく</rt></ruby>の<ruby>花<rt>はな</rt></ruby>",
+    "first":"<ruby>心当<rt>こころあ</rt></ruby>てに<br><ruby>折<rt>お</rt></ruby>らばや<ruby>折<rt>お</rt></ruby>ら<ruby>む<rt>ん</rt></ruby><br><ruby>初霜<rt>はつしも</rt></ruby>の",
+    "second":"おきまど<ruby>は<rt>わ</rt></ruby>せる<br><ruby>白菊<rt>しらぎく</rt></ruby>の<ruby>花<rt>はな</rt></ruby>",
     "name":"<ruby>凡河内躬恒<rt>おおしこうちのみつね</rt></ruby>",
     "nameKana":"おおしこうちのみつね",
     "date":"生没年不詳",
@@ -437,7 +437,7 @@
   "32":{
     "number":"32",
     "first":"<ruby>山川<rt>やまがわ</rt></ruby>に<br><ruby>風<rt>かぜ</rt></ruby>のかけたる<br>しがらみは",
-    "second":"<ruby>流<rt>なが</rt></ruby>れもあへぬ<br><ruby>紅葉<rt>もみじ</rt></ruby>なりけり",
+    "second":"<ruby>流<rt>なが</rt></ruby>れもあ<ruby>へ<rt>え</rt></ruby>ぬ<br><ruby>紅葉<rt>もみじ</rt></ruby>なりけり",
     "name":"<ruby>春道列樹<rt>はるみちのつらき</rt></ruby>",
     "nameKana":"はるみちのつらき",
     "date":"生年不詳～920年",
@@ -451,7 +451,7 @@
   "33":{
     "number":"33",
     "first":"<ruby>久方<rt>ひさかた</rt></ruby>の<br><ruby>光<rt>ひかり</rt></ruby>のどけき<br><ruby>春<rt>はる</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に",
-    "second":"しづ<ruby>心<rt>こころ</rt></ruby>なく<br><ruby>花<rt>はな</rt></ruby>の<ruby>散<rt>ち</rt></ruby>るらむ",
+    "second":"しづ<ruby>心<rt>こころ</rt></ruby>なく<br><ruby>花<rt>はな</rt></ruby>の<ruby>散<rt>ち</rt></ruby>るら<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>紀友則<rt>きのとものり</rt></ruby>",
     "nameKana":"きのとものり",
     "date":"生年不詳～905年頃",
@@ -464,7 +464,7 @@
   },
   "34":{
     "number":"34",
-    "first":"<ruby>誰<rt>たれ</rt></ruby>をかも<br>しる<ruby>人<rt>ひと</rt></ruby>にせむ<br><ruby>高砂<rt>たかさご</rt></ruby>の",
+    "first":"<ruby>誰<rt>たれ</rt></ruby>をかも<br><ruby>知<rt>し</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>にせ<ruby>む<rt>ん</rt></ruby><br><ruby>高砂<rt>たかさご</rt></ruby>の",
     "second":"<ruby>松<rt>まつ</rt></ruby>も<ruby>昔<rt>むかし</rt></ruby>の<br><ruby>友<rt>とも</rt></ruby>ならなくに",
     "name":"<ruby>藤原興風<rt>ふじわらのおきかぜ</rt></ruby>",
     "nameKana":"ふじわらのおきかぜ",
@@ -479,7 +479,7 @@
   "35":{
     "number":"35",
     "first":"<ruby>人<rt>ひと</rt></ruby>はいさ<br><ruby>心<rt>こころ</rt></ruby>も<ruby>知<rt>し</rt></ruby>らず<br>ふるさとは",
-    "second":"<ruby>花<rt>はな</rt></ruby>ぞ<ruby>昔<rt>むかし</rt></ruby>の<br><ruby>香<rt>か</rt></ruby>に<ruby>匂<rt>にお</rt></ruby>ひける",
+    "second":"<ruby>花<rt>はな</rt></ruby>ぞ<ruby>昔<rt>むかし</rt></ruby>の<br><ruby>香<rt>か</rt></ruby>に<ruby>匂<rt>にお</rt></ruby><ruby>ひ<rt>い</rt></ruby>ける",
     "name":"<ruby>紀貫之<rt>きのつらゆき</rt></ruby>",
     "nameKana":"きのつらゆき",
     "date":"868年～945年",
@@ -493,7 +493,7 @@
   "36":{
     "number":"36",
     "first":"<ruby>夏<rt>なつ</rt></ruby>の<ruby>夜<rt>よ</rt></ruby>は<br>まだ<ruby>宵<rt>よい</rt></ruby>ながら<br>あけぬるを",
-    "second":"<ruby>雲<rt>くも</rt></ruby>のいづこに<br><ruby>月<rt>つき</rt></ruby>やどるらむ",
+    "second":"<ruby>雲<rt>くも</rt></ruby>のいづこに<br><ruby>月<rt>つき</rt></ruby>やどるら<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>清原深養父<rt>きよはらのふかやぶ</rt></ruby>",
     "nameKana":"きよはらのふかやぶ",
     "date":"生没年不詳",
@@ -529,7 +529,7 @@
     "torihuda":"ひとのいのちのをしくもあるかな",
     "theme":"love",
     "translation":"忘れ去られる私は構わないのですが。愛すると神に誓ってくれたあなたが神罰によって命を落とさないか案じております。",
-    "background":"この歌は、自分を捨てた恋人を心配しているのか、恨んでいるのか解釈が分かれるところです。あるいは両方の気持ちが混ざりあっているのかもしれません。『大和物語』によると、この歌の相手は権中納言敦忠（43番）だったようです。",
+    "background":"この歌は、神に誓って愛すると言った恋人が自分を捨てたので、神罰が下らないか心配という内容です。受け取った相手は恐怖におののいたことでしょう。『大和物語』によると、相手は権中納言敦忠（43番）だったようです。",
     "personality":"右近は醍醐天皇の后である中宮穏子に仕えた女房です。右近という名前は彼女の父親の官命である右近衛少将に由来しています。"
   },
   "39":{
@@ -548,21 +548,21 @@
   "40":{
     "number":"40",
     "first":"<ruby>忍<rt>しの</rt></ruby>ぶれど<br><ruby>色<rt>いろ</rt></ruby>に<ruby>出<rt>い</rt></ruby>でにけり<br><ruby>我<rt>わ</rt></ruby>が<ruby>恋<rt>こい</rt></ruby>は",
-    "second":"<ruby>物<rt>もの</rt></ruby>や<ruby>思<rt>おも</rt></ruby>ふと<br><ruby>人<rt>ひと</rt></ruby>の<ruby>問<rt>と</rt></ruby>ふまで",
+    "second":"<ruby>物<rt>もの</rt></ruby>や<ruby>思<rt>おも</rt></ruby>ふと<br><ruby>人<rt>ひと</rt></ruby>の<ruby>問<rt>と</rt></ruby><ruby>ふ<rt>う</rt></ruby>まで",
     "name":"<ruby>平兼盛<rt>たいらのかねもり</rt></ruby>",
     "nameKana":"たいらのかねもり",
     "date":"生年不詳～990年",
     "yomihuda":"しのぶれど<br>いろにいでにけり<br>わがこひは<br>ものやおもふと<br>ひとのとふまで",
     "torihuda":"ものやおもふとひとのとふまで",
     "theme":"love",
-    "translation":"気づかれないように恋心を秘めてきましたが、顔色に出てしまっていたようです。人から恋患いをしているのかと尋ねられるほど。",
+    "translation":"気づかれないように恋心を秘めてきましたが、顔色に出てしまっていたようです。人から物思いをしているのではないかと聞かれるまでに。",
     "background":"この歌は、村上天皇が開いた歌合わせで「忍恋」というお題で詠まれたものです。41番の壬生忠見の歌と接戦になりましたが、村上天皇が「しのぶれど～」と口ずさんでいため、平兼盛の歌の勝ちに決まりました。",
     "personality":"平兼盛は、光孝天皇の玄孫でしたが、<ruby>臣籍降下<rt>しんせきこうか</rt></ruby>（皇族が身分を離れて、姓を与えられて家臣になる）し平氏を名乗りました。平清盛と名前が似ていますが、平家の武士とは関係ありません。"
   },
   "41":{
     "number":"41",
     "first":"<ruby>恋<rt>こい</rt></ruby>す<ruby>てふ<rt>ちょう</rt></ruby><br><ruby>我<rt>わ</rt></ruby>が<ruby>名<rt>な</rt></ruby>はまだき<br><ruby>立<rt>た</rt></ruby>ちにけり",
-    "second":"<ruby>人<rt>ひと</rt></ruby>しれずこそ<br><ruby>思<rt>おも</rt></ruby>ひそめしか",
+    "second":"<ruby>人<rt>ひと</rt></ruby>しれずこそ<br><ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby>そめしか",
     "name":"<ruby>壬生忠見<rt>みぶのただみ</rt></ruby>",
     "nameKana":"みぶのただみ",
     "date":"生没年不詳",
@@ -589,8 +589,8 @@
   },
   "43":{
     "number":"43",
-    "first":"あひみての<br>のちの<ruby>心<rt>こころ</rt></ruby>に<br>くらぶれば",
-    "second":"<ruby>昔<rt>むかし</rt></ruby>は<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby>はざりけり",
+    "first":"<ruby>逢<rt>あ</rt></ruby><ruby>ひ<rt>い</rt></ruby><ruby>見<rt>み</rt></ruby>ての<br>のちの<ruby>心<rt>こころ</rt></ruby>に<br>くらぶれば",
+    "second":"<ruby>昔<rt>むかし</rt></ruby>は<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby><ruby>は<rt>わ</rt></ruby>ざりけり",
     "name":"<ruby>権中納言敦忠<rt>ちゅうなごんあつただ</rt></ruby>",
     "nameKana":"ちゅうなごんあつただ",
     "date":"906年～943年",
@@ -603,7 +603,7 @@
   },
   "44":{
     "number":"44",
-    "first":"<ruby>逢<rt>あ</rt></ruby>ふことの<br><ruby>絶<rt>た</rt></ruby>えてしなくば<br>なかなかに",
+    "first":"<ruby>逢<rt>あ</rt></ruby><ruby>ふ<rt>う</rt></ruby>ことの<br><ruby>絶<rt>た</rt></ruby>えてしなくば<br>なかなかに",
     "second":"<ruby>人<rt>ひと</rt></ruby>をも<ruby>身<rt>み</rt></ruby>をも<br><ruby>恨<rt>うら</rt></ruby>みざらまし",
     "name":"<ruby>中納言朝忠<rt>ちゅうなごんあさただ</rt></ruby>",
     "nameKana":"ちゅうなごんあさただ",
@@ -617,8 +617,8 @@
   },
   "45":{
     "number":"45",
-    "first":"あはれとも<br>いふべき人は<br><ruby>思<rt>おも</rt></ruby>ほえで",
-    "second":"<ruby>身<rt>み</rt></ruby>のいたづらに<br>なりぬべきかな",
+    "first":"あ<ruby>は<rt>わ</rt></ruby>れとも<br>い<ruby>ふ<rt>う</rt></ruby>べき人は<br><ruby>思<rt>おも</rt></ruby><ruby>ほ<rt>お</rt></ruby>えで",
+    "second":"<ruby>身<rt>み</rt></ruby>のいた<ruby>づ<rt>ず</rt></ruby>らに<br>なりぬべきかな",
     "name":"<ruby>謙徳公<rt>けんとくこう</rt></ruby>",
     "nameKana":"けんとくこう",
     "date":"924年～972年",
@@ -631,7 +631,7 @@
   },
   "46":{
     "number":"46",
-    "first":"<ruby>由良<rt>ゆら</rt></ruby>のとを<br><ruby>渡<rt>わた</rt></ruby>る<ruby>舟人<rt>ふなびと</rt></ruby><br>かぢをたえ",
+    "first":"<ruby>由良<rt>ゆら</rt></ruby>のとを<br><ruby>渡<rt>わた</rt></ruby>る<ruby>舟人<rt>ふなびと</rt></ruby><br>か<ruby>ぢ<rt>じ</rt></ruby>を<ruby>絶<rt>た</rt></ruby>え",
     "second":"ゆくへも<ruby>知<rt>し</rt></ruby>らぬ<br><ruby>恋<rt>こい</rt></ruby>の<ruby>道<rt>みち</rt></ruby>かな",
     "name":"<ruby>曽禰好忠<rt>そねのよしただ</rt></ruby>",
     "nameKana":"そねのよしただ",
@@ -660,7 +660,7 @@
   "48":{
     "number":"48",
     "first":"<ruby>風<rt>かぜ</rt></ruby>をいたみ<br><ruby>岩<rt>いわ</rt></ruby>うつ<ruby>波<rt>なみ</rt></ruby>の<br>おのれのみ",
-    "second":"くだけて<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby>ふころかな",
+    "second":"くだけて<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby>ころかな",
     "name":"<ruby>源重之<rt>みなもとのしげゆき</rt></ruby>",
     "nameKana":"みなもとのしげゆき",
     "date":"生没年不詳",
@@ -674,7 +674,7 @@
   "49":{
     "number":"49",
     "first":"みかきもり<br><ruby>衛士<rt>えじ</rt></ruby>のたく<ruby>火<rt>ひ</rt></ruby>の<br><ruby>夜<rt>よる</rt></ruby>はもえ",
-    "second":"<ruby>昼<rt>ひる</rt></ruby>は<ruby>消<rt>き</rt></ruby>えつつ<br><ruby>物<rt>もの</rt></ruby>をこそ<ruby>思<rt>おも</rt></ruby>へ",
+    "second":"<ruby>昼<rt>ひる</rt></ruby>は<ruby>消<rt>き</rt></ruby>えつつ<br><ruby>物<rt>もの</rt></ruby>をこそ<ruby>思<rt>おも</rt></ruby><ruby>へ<rt>え</rt></ruby>",
     "name":"<ruby>大中臣能宣朝臣<rt>おおなかとみのよしのぶあそん</rt></ruby>",
     "nameKana":"おおなかとみのよしのぶあそん",
     "date":"921年～991年",
@@ -687,8 +687,8 @@
   },
   "50":{
     "number":"50",
-    "first":"<ruby>君<rt>きみ</rt></ruby>がため<br><ruby>惜<rt>お</rt></ruby>しからざりし<br>いのちさへ",
-    "second":"<ruby>長<rt>なが</rt></ruby>くもがなと<br><ruby>思<rt>おも</rt></ruby>ひけるかな",
+    "first":"<ruby>君<rt>きみ</rt></ruby>がため<br><ruby>惜<rt>お</rt></ruby>しからざりし<br>いのちさ<ruby>へ<rt>え</rt></ruby>",
+    "second":"<ruby>長<rt>なが</rt></ruby>くもがなと<br><ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby>けるかな",
     "name":"<ruby>藤原義孝<rt>ふじわらのよしたか</rt></ruby>",
     "nameKana":"ふじわらのよしたか",
     "date":"954年～974年",
@@ -702,7 +702,7 @@
   "51":{
     "number":"51",
     "first":"かくとだに<br>えやはいぶきの<br>さしも<ruby>草<rt>ぐさ</rt></ruby>",
-    "second":"さしも<ruby>知<rt>し</rt></ruby>らじな<br>もゆる<ruby>思<rt>おも</rt></ruby>ひを",
+    "second":"さしも<ruby>知<rt>し</rt></ruby>らじな<br>もゆる<ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby>を",
     "name":"<ruby>藤原実方朝臣<rt>ふじわらのさねかたあそん</rt></ruby>",
     "nameKana":"ふじわらのさねかたあそん",
     "date":"生年不詳～998年",
@@ -716,7 +716,7 @@
   "52":{
     "number":"52",
     "first":"あけぬれば<br><ruby>暮<rt>く</rt></ruby>るるものとは<br><ruby>知<rt>く</rt></ruby>りながら",
-    "second":"なほうらめしき<br><ruby>朝<rt>あさ</rt></ruby>ぼらけかな",
+    "second":"な<ruby>ほ<rt>お</rt></ruby>うらめしき<br><ruby>朝<rt>あさ</rt></ruby>ぼらけかな",
     "name":"<ruby>藤原道信朝臣<rt>ふじわらのみちのぶあそん</rt></ruby>",
     "nameKana":"ふじわらのみちのぶあそん",
     "date":"972年～994年",
@@ -757,7 +757,7 @@
   "55":{
     "number":"55",
     "first":"<ruby>滝<rt>たき</rt></ruby>の<ruby>音<rt>おと</rt></ruby>は<br>たえて<ruby>久<rt>ひさ</rt></ruby>しく<br>なりぬれど",
-    "second":"<ruby>名<rt>な</rt></ruby>こそ<ruby>流<rt>なが</rt></ruby>れて<br>なほ<ruby>聞<rt>き</rt></ruby>こえけれ",
+    "second":"<ruby>名<rt>な</rt></ruby>こそ<ruby>流<rt>なが</rt></ruby>れて<br>な<ruby>ほ<rt>お</rt></ruby><ruby>聞<rt>き</rt></ruby>こえけれ",
     "name":"<ruby>大納言公任<rt>だいなごんきんとう</rt></ruby>",
     "nameKana":"だいなごんきんとう",
     "date":"996年～1041年",
@@ -770,8 +770,8 @@
   },
   "56":{
     "number":"56",
-    "first":"あらざらむ<br>この<ruby>世<rt>よ</rt></ruby>のほかの<br><ruby>思<rt>おも</rt></ruby>ひ<ruby>出<rt>で</rt></ruby>に",
-    "second":"いまひとたびの<br><ruby>逢<rt>あ</rt></ruby>ふこともがな",
+    "first":"あらざら<ruby>む<rt>ん</rt></ruby><br>この<ruby>世<rt>よ</rt></ruby>のほかの<br><ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby><ruby>出<rt>で</rt></ruby>に",
+    "second":"いまひとたびの<br><ruby>逢<rt>あ</rt></ruby><ruby>ふ<rt>う</rt></ruby>こともがな",
     "name":"<ruby>和泉式部<rt>いずみしきぶ</rt></ruby>",
     "nameKana":"いずみしきぶ",
     "date":"生没年不詳",
@@ -784,7 +784,7 @@
   },
   "57":{
     "number":"57",
-    "first":"めぐり<ruby>逢<rt>あ</rt></ruby>ひて<br><ruby>見<rt>み</rt></ruby>しやそれとも<br>わかぬ<ruby>間<rt>ま</rt></ruby>に",
+    "first":"めぐり<ruby>逢<rt>あ</rt></ruby><ruby>ひ<rt>い</rt></ruby>て<br><ruby>見<rt>み</rt></ruby>しやそれとも<br>わかぬ<ruby>間<rt>ま</rt></ruby>に",
     "second":"<ruby>雲隠<rt>くもがく</rt></ruby>れにし<br><ruby>夜半<rt>よわ</rt></ruby>の<ruby>月<rt>つき</rt></ruby>かな",
     "name":"<ruby>紫式部<rt>むらさきしきぶ</rt></ruby>",
     "nameKana":"むらさきしきぶ",
@@ -812,7 +812,7 @@
   },
   "59":{
     "number":"59",
-    "first":"やすらはで<br><ruby>寝<rt>ね</rt></ruby>なましものを<br><ruby>小夜<rt>さよ</rt></ruby><ruby>更<rt>ふ</rt></ruby>けて",
+    "first":"やすら<ruby>は<rt>わ</rt></ruby>で<br><ruby>寝<rt>ね</rt></ruby>なましものを<br><ruby>小夜<rt>さよ</rt></ruby><ruby>更<rt>ふ</rt></ruby>けて",
     "second":"かたぶくまでの<br><ruby>月<rt>つき</rt></ruby>を<ruby>見<rt>み</rt></ruby>しかな",
     "name":"<ruby>赤染衛門<rt>あかぞめえもん</rt></ruby>",
     "nameKana":"あかぞめえもん",
@@ -840,8 +840,8 @@
   },
   "61":{
     "number":"61",
-    "first":"いにしへの<br><ruby>奈良<rt>なら</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>の<br><ruby>八重桜<rt>やえざくら</rt></ruby>",
-    "second":"<ruby>けふ<rt>きょう</rt></ruby><ruby>九重<rt>ここのえ</rt></ruby>に<br><ruby>匂<rt>にお</rt></ruby>ひぬるかな",
+    "first":"いにし<ruby>へ<rt>え</rt></ruby>の<br><ruby>奈良<rt>なら</rt></ruby>の<ruby>都<rt>みやこ</rt></ruby>の<br><ruby>八重桜<rt>やえざくら</rt></ruby>",
+    "second":"<ruby>けふ<rt>きょう</rt></ruby><ruby>九重<rt>ここのえ</rt></ruby>に<br><ruby>匂<rt>にお</rt></ruby><ruby>ひ<rt>い</rt></ruby>ぬるかな",
     "name":"<ruby>伊勢大輔<rt>いせのたいふ</rt></ruby>",
     "nameKana":"いせのたいふ",
     "date":"生没年不詳",
@@ -855,7 +855,7 @@
   "62":{
     "number":"62",
     "first":"<ruby>夜<rt>よる</rt></ruby>をこめて<br><ruby>鳥<rt>とり</rt></ruby>のそらねは<br>はかるとも",
-    "second":"よに<ruby>逢坂<rt>おうさか</rt></ruby>の<br><ruby>関<rt>せき</rt></ruby>はゆるさじ",
+    "second":"よに<ruby>逢坂<rt>おうさか</rt></ruby>の<br><ruby>関<rt>せき</rt></ruby>は<ruby>許<rt>ゆる</rt></ruby>さじ",
     "name":"<ruby>清少納言<rt>せいしょうなごん</rt></ruby>",
     "nameKana":"せいしょうなごん",
     "date":"生没年不詳",
@@ -868,8 +868,8 @@
   },
   "63":{
     "number":"63",
-    "first":"いまはただ<br><ruby>思<rt>おも</rt></ruby>ひ<ruby>絶<rt>た</rt></ruby>えなむ<br>とばかりを",
-    "second":"<ruby>人<rt>ひと</rt></ruby>づてならで<br><ruby>言<rt>い</rt></ruby>ふよしもがな",
+    "first":"いまはただ<br><ruby>思<rt>おも</rt></ruby>ひ<ruby>絶<rt>た</rt></ruby>えな<ruby>む<rt>ん</rt></ruby><br>とばかりを",
+    "second":"<ruby>人<rt>ひと</rt></ruby>づてならで<br><ruby>言<rt>い</rt></ruby><ruby>ふ<rt>う</rt></ruby>よしもがな",
     "name":"<ruby>左京大夫道雅<rt>さきょうのだいぶみちまさ</rt></ruby>",
     "nameKana":"さきょうのだいぶみちまさ",
     "date":"992年～1054年",
@@ -883,7 +883,7 @@
   "64":{
     "number":"64",
     "first":"<ruby>朝<rt>あさ</rt></ruby>ぼらけ<br><ruby>宇治<rt>うじ</rt></ruby>の<ruby>川霧<rt>かわぎり</rt></ruby><br>絶<ruby>絶<rt>た</rt></ruby>え<ruby>絶<rt>だ</rt></ruby>えに",
-    "second":"あらはれわたる<br><ruby>瀬々<rt>せぜ</rt></ruby>の<ruby>網代木<rt>あじろぎ</rt></ruby>",
+    "second":"あら<ruby>は<rt>わ</rt></ruby>れわたる<br><ruby>瀬々<rt>せぜ</rt></ruby>の<ruby>網代木<rt>あじろぎ</rt></ruby>",
     "name":"<ruby>権中納言定頼<rt>ごんちゅうなごんさだより</rt></ruby>",
     "nameKana":"ごんちゅうなごんさだより",
     "date":"995年～1045年",
@@ -896,8 +896,8 @@
   },
   "65":{
     "number":"65",
-    "first":"うらみわび<br>ほさぬ<ruby>袖<rt>そで</rt></ruby>だに<br>あるものを",
-    "second":"<ruby>恋<rt>こい</rt></ruby>にくちなむ<br><ruby>名<rt>な</rt></ruby>こそをしけれ",
+    "first":"<ruby>恨<rt>うら</rt></ruby>みわび<br>ほさぬ<ruby>袖<rt>そで</rt></ruby>だに<br>あるものを",
+    "second":"<ruby>恋<rt>こい</rt></ruby>にくちな<ruby>む<rt>ん</rt></ruby><br><ruby>名<rt>な</rt></ruby>こそをしけれ",
     "name":"<ruby>相模<rt>さがみ</rt></ruby>",
     "nameKana":"さがみ",
     "date":"生没年不詳",
@@ -910,7 +910,7 @@
   },
   "66":{
     "number":"66",
-    "first":"もろともに<br>あはれと<ruby>思<rt>おも</rt></ruby>へ<br><ruby>山桜<rt>やまざくら</rt></ruby>",
+    "first":"もろともに<br>あ<ruby>は<rt>わ</rt></ruby>れと<ruby>思<rt>おも</rt></ruby><ruby>へ<rt>え</rt></ruby><br><ruby>山桜<rt>やまざくら</rt></ruby>",
     "second":"<ruby>花<rt>はな</rt></ruby>よりほかに<br><ruby>知<rt>し</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>もなし",
     "name":"<ruby>前大僧正行尊<rt>さきのだいそうじょうぎょうそん</rt></ruby>",
     "nameKana":"さきのだいそうじょうぎょうそん",
@@ -918,14 +918,14 @@
     "yomihuda":"もろともに<br>あはれとおもへ<br>やまざくら<br>はなよりほかに<br>しるひともなし",
     "torihuda":"はなよりほかにしるひともなし",
     "theme":"misc",
-    "translation":"山桜よ。私が愛おしく思うように、私を思っておくれ。お前以外に私を気にかけてくれる人はいない。",
-    "background":"この歌は、吉野の山奥で厳しい修行をしていた作者が偶然美しい山桜を目の前にして詠みあげたと言われています。",
+    "translation":"山桜よ。私が懐かしく思うように、私を思っておくれ。お前以外に知っている人はいないのだから。",
+    "background":"この歌は、吉野の山奥で厳しい修行をしていた作者が偶然山桜を目の前にして詠みあげたと言われています。一本だけ厳しい環境で咲く山桜に孤独な修行をする自分を重ねたようです。",
     "personality":"行尊は参議だった父を10歳でなくし、12歳で出家しました。人知れず厳しい修行に耐える生活を送っていたようですが、<ruby>大僧正<rt>だいそうじょう</rt></ruby>という僧侶として最高の地位にまで上りつめました。"
   },
   "67":{
     "number":"67",
     "first":"<ruby>春<rt>はる</rt></ruby>の<ruby>夜<rt>よ</rt></ruby>の<br><ruby>夢<rt>ゆめ</rt></ruby>ばかりなる<br><ruby>手枕<rt>たまくら</rt></ruby>に",
-    "second":"かひなく<ruby>立<rt>た</rt></ruby>たむ<br><ruby>名<rt>な</rt></ruby>こそをしけれ",
+    "second":"か<ruby>ひ<rt>い</rt></ruby>なく<ruby>立<rt>た</rt></ruby>た<ruby>む<rt>ん</rt></ruby><br><ruby>名<rt>な</rt></ruby>こそをしけれ",
     "name":"<ruby>周防内侍<rt>すおうのないし</rt></ruby>",
     "nameKana":"すおうのないし",
     "date":"生没年不詳",
@@ -938,7 +938,7 @@
   },
   "68":{
     "number":"68",
-    "first":"<ruby>心<rt>こころ</rt></ruby>にも<br>あらでうき<ruby>世<rt>よ</rt></ruby>に<br>ながらへば",
+    "first":"<ruby>心<rt>こころ</rt></ruby>にも<br>あらでうき<ruby>世<rt>よ</rt></ruby>に<br>ながら<ruby>へ<rt>え</rt></ruby>ば",
     "second":"<ruby>恋<rt>こい</rt></ruby>しかるべき<br><ruby>夜半<rt>よわ</rt></ruby>の<ruby>月<rt>つき</rt></ruby>かな",
     "name":"<ruby>三条院<rt>さんじょういん</rt></ruby>",
     "nameKana":"さんじょういん",
@@ -952,7 +952,7 @@
   },
   "69":{
     "number":"69",
-    "first":"<ruby>嵐<rt>あらし</rt></ruby><ruby>吹<rt>ふ</rt></ruby>く<br>み<ruby>むろ<rt></rt></ruby>の<ruby>山<rt>やま</rt></ruby>の<br>もみぢ<ruby>葉<rt>ば</rt></ruby>は",
+    "first":"<ruby>嵐<rt>あらし</rt></ruby><ruby>吹<rt>ふ</rt></ruby>く<br><ruby>三室<rt>みむろ</rt></ruby>の<ruby>山<rt>やま</rt></ruby>の<br><ruby>紅葉<rt>もみじ</rt></ruby><ruby>葉<rt>ば</rt></ruby>は",
     "second":"<ruby>竜田<rt>たつた</rt></ruby>の<ruby>川<rt>かわ</rt></ruby>の<br><ruby>錦<rt>にしき</rt></ruby>なりけり",
     "name":"<ruby>能因法師<rt>のういんほうし</rt></ruby>",
     "nameKana":"のういんほうし",
@@ -967,7 +967,7 @@
   "70":{
     "number":"70",
     "first":"さびしさに<br><ruby>宿<rt>やど</rt></ruby>を<ruby>立<rt>た</rt></ruby>ち<ruby>出<rt>い</rt></ruby>でて<br>ながむれば",
-    "second":"いづくもおなじ<br><ruby>秋<rt>あき</rt></ruby>の<ruby>夕<rt>ゆう</rt></ruby><ruby>暮<rt>ぐれ</rt></ruby>",
+    "second":"い<ruby>づ<rt>ず</rt></ruby>くも<ruby>同<rt>おな</rt></ruby>じ<br><ruby>秋<rt>あき</rt></ruby>の<ruby>夕<rt>ゆう</rt></ruby><ruby>暮<rt>ぐれ</rt></ruby>",
     "name":"<ruby>良暹法師<rt>りょうぜんほうし</rt></ruby>",
     "nameKana":"りょうぜんほうし",
     "date":"生没年不詳",
@@ -980,7 +980,7 @@
   },
   "71":{
     "number":"71",
-    "first":"<ruby>夕<rt>ゆう</rt></ruby>されば<br><ruby>門田<rt>かどた</rt></ruby>の<ruby>稲葉<rt>いなば</rt></ruby><br>おとづれて",
+    "first":"<ruby>夕<rt>ゆう</rt></ruby>されば<br><ruby>門田<rt>かどた</rt></ruby>の<ruby>稲葉<rt>いなば</rt></ruby><br>おと<ruby>づ<rt>ず</rt></ruby>れて",
     "second":"<ruby>蘆<rt>あし</rt></ruby>のまろやに<br><ruby>秋風<rt>あきかぜ</rt></ruby>ぞ<ruby>吹<rt>ふ</rt></ruby>く",
     "name":"<ruby>大納言経信<rt>だいなごんつねのぶ</rt></ruby>",
     "nameKana":"だいなごんつねのぶ",
@@ -1009,7 +1009,7 @@
   "73":{
     "number":"73",
     "first":"<ruby>高砂<rt>たかさご</rt></ruby>の<br><ruby>尾上<rt>おのえ</rt></ruby>の<ruby>桜<rt>さくら</rt></ruby><br><ruby>咲<rt>さ</rt></ruby>きにけり",
-    "second":"<ruby>外山<rt>とやま</rt></ruby>の<ruby>霞<rt>かすみ</rt></ruby><br><ruby>立<rt>た</rt></ruby>たずもあらなむ",
+    "second":"<ruby>外山<rt>とやま</rt></ruby>の<ruby>霞<rt>かすみ</rt></ruby><br><ruby>立<rt>た</rt></ruby>たずもあらな<ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>前権中納言匡房<rt>さきのちゅうなごんまさふさ</rt></ruby>",
     "nameKana":"さきのちゅうなごんまさふさ",
     "date":"1041年～1111年",
@@ -1037,7 +1037,7 @@
   "75":{
     "number":"75",
     "first":"<ruby>契<rt>ちぎ</rt></ruby>りおきし<br>させもが<ruby>露<rt>つゆ</rt></ruby>を<br>いのちにて",
-    "second":"あはれ<ruby>今年<rt>ことし</rt></ruby>の<br><ruby>秋<rt>あき</rt></ruby>もいぬめり",
+    "second":"あ<ruby>は<rt>わ</rt></ruby>れ<ruby>今年<rt>ことし</rt></ruby>の<br><ruby>秋<rt>あき</rt></ruby>もいぬめり",
     "name":"<ruby>藤原基俊<rt>ふじわらのもととし</rt></ruby>",
     "nameKana":"ふじわらのもととし",
     "date":"1060年～1142年",
@@ -1045,13 +1045,13 @@
     "torihuda":"あはれことしのあきもいぬめり",
     "theme":"misc",
     "translation":"任せておきなさいとお約束してくださったのに、ああ、今年の秋もむなしく過ぎていくようだ。",
-    "background":"この歌は、興福寺の僧になった息子の出世を願う父が人事権を持つ人にお願いしていたのに今年も息子は出世しなかったと嘆いていたものです。「させもが露」は、「なほ頼めしめぢが原のさしも草 われ世の中にあらむ限りは」（しめじが原のもぐさを焼くように悩むことがあっても、私が生きている限りはまかせなさい」という古今和歌集に収められた歌を引用しています。",
+    "background":"この歌は、興福寺の僧になった息子の出世を願う親が人事権を持つ人にお願いしていたのに今年も息子は出世しなかったと嘆いていたものです。「させもが露」は、「なほ頼めしめぢが原のさしも草 われ世の中にあらむ限りは」（しめじが原のもぐさを焼くように悩むことがあっても、私が生きている限りはまかせなさい」という古今和歌集に収められた歌を引用しています。",
     "personality":"藤原基俊は藤原定家の父、藤原俊成の歌の師匠でした。"
   },
   "76":{
     "number":"76",
     "first":"わたの<ruby>原<rt>はら</rt></ruby><br>こぎいでてみれば<br><ruby>久方<rt>ひさかた</rt></ruby>の",
-    "second":"<ruby>雲<rt>くも</rt></ruby><ruby>居<rt>い</rt></ruby>にまがふ<br><ruby>沖<rt>おき</rt></ruby>つ<ruby>白波<rt>しらなみ</rt></ruby>",
+    "second":"<ruby>雲<rt>くも</rt></ruby><ruby>居<rt>い</rt></ruby>にま<ruby>が<rt>ご</rt></ruby><ruby>ふ<rt>う</rt></ruby><br><ruby>沖<rt>おき</rt></ruby>つ<ruby>白波<rt>しらなみ</rt></ruby>",
     "name":"<ruby>法性寺入道前関白太政大臣<rt>ほっしょうじにゅうどうさきのかんぱくだいじょうだいじん</rt></ruby>",
     "nameKana":"<span style='font-size:13.5px;'>ほっしょうじにゅうどうさきのかんぱくだいじょうだいじん</span>",
     "date":"1097年～1164年",
@@ -1065,7 +1065,7 @@
   "77":{
     "number":"77",
     "first":"<ruby>瀬<rt>せ</rt></ruby>をはやみ<br><ruby>岩<rt>いわ</rt></ruby>にせかるる<br><ruby>滝川<rt>たきがわ</rt></ruby>の",
-    "second":"われても<ruby>末<rt>すえ</rt></ruby>に<br>あはむとぞ<ruby>思<rt>おも</rt></ruby>ふ",
+    "second":"われても<ruby>末<rt>すえ</rt></ruby>に<br>あ<ruby>は<rt>わ</rt></ruby><ruby>む<rt>ん</rt></ruby>とぞ<ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby>",
     "name":"<ruby>崇徳院<rt>すとくいん</rt></ruby>",
     "nameKana":"すとくいん",
     "date":"1119年～1164年",
@@ -1078,7 +1078,7 @@
   },
   "78":{
     "number":"78",
-    "first":"<ruby>淡路島<rt>あわじしま</rt></ruby><br>かよふ<ruby>千鳥<rt>ちどり</rt></ruby>の<br><ruby>鳴<rt>な</rt></ruby>く<ruby>声<rt>こえ</rt></ruby>に",
+    "first":"<ruby>淡路島<rt>あわじしま</rt></ruby><br>かよ<ruby>ふ<rt>う</rt></ruby><ruby>千鳥<rt>ちどり</rt></ruby>の<br><ruby>鳴<rt>な</rt></ruby>く<ruby>声<rt>こえ</rt></ruby>に",
     "second":"<ruby>幾夜<rt></rt></ruby><ruby>寝覚<rt>ねざ</rt></ruby>めぬ<br><ruby>須磨<rt>すま</rt></ruby>の<ruby>関守<rt>せきもり</rt></ruby>",
     "name":"<ruby>源兼昌<rt>みなもとのかねまさ</rt></ruby>",
     "nameKana":"みなもとのかねまさ",
@@ -1093,7 +1093,7 @@
   "79":{
     "number":"79",
     "first":"<ruby>秋風<rt>あきかぜ</rt></ruby>に<br>たなびく<ruby>雲<rt>くも</rt></ruby>の<br>たえ<ruby>間<rt>ま</rt></ruby>より",
-    "second":"もれいづる<ruby>月<rt>つき</rt></ruby>の<br><ruby>影<rt>かげ</rt></ruby>のさやけさ",
+    "second":"もれい<ruby>づ<rt>ず</rt></ruby>る<ruby>月<rt>つき</rt></ruby>の<br><ruby>影<rt>かげ</rt></ruby>のさやけさ",
     "name":"<ruby>左京大夫顕輔<rt>さきょうのだいぶあきすけ</rt></ruby>",
     "nameKana":"さきょうのだいぶあきすけ",
     "date":"1090年～1155年",
@@ -1106,8 +1106,8 @@
   },
   "80":{
     "number":"80",
-    "first":"<ruby>長<rt>なが</rt></ruby>からむ<br><ruby>心<rt>こころ</rt></ruby>もしらず<br><ruby>黒髪<rt>くろがみ</rt></ruby>の",
-    "second":"みだれてけさは<br><ruby>物<rt>もの</rt></ruby>をこそ<ruby>思<rt>おも</rt></ruby>へ",
+    "first":"<ruby>長<rt>なが</rt></ruby>から<ruby>む<rt>ん</rt></ruby><br><ruby>心<rt>こころ</rt></ruby>もしらず<br><ruby>黒髪<rt>くろがみ</rt></ruby>の",
+    "second":"みだれてけさは<br><ruby>物<rt>もの</rt></ruby>をこそ<ruby>思<rt>おも</rt></ruby><ruby>へ<rt>え</rt></ruby>",
     "name":"<ruby>待賢門院堀河<rt>たいけんもんいんのほりかわ</rt></ruby>",
     "nameKana":"たいけんもんいんのほりかわ",
     "date":"生没年不詳",
@@ -1134,8 +1134,8 @@
   },
   "82":{
     "number":"82",
-    "first":"<ruby>思<rt>おも</rt></ruby>ひわび<br>さてもいのちは<br>あるものを",
-    "second":"<ruby>憂<rt>う</rt></ruby>きにたへぬは<br><ruby>涙<rt>なみだ</rt></ruby>なりけり",
+    "first":"<ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby>わび<br>さても<ruby>命<rt>いのち</rt></ruby>は<br>あるものを",
+    "second":"<ruby>憂<rt>う</rt></ruby>きにた<ruby>へ<rt>え</rt></ruby>ぬは<br><ruby>涙<rt>なみだ</rt></ruby>なりけり",
     "name":"<ruby>道因法師<rt>どういんほうし</rt></ruby>",
     "nameKana":"どういんほうし",
     "date":"1090年～没年不詳",
@@ -1148,7 +1148,7 @@
   },
   "83":{
     "number":"83",
-    "first":"<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>よ<br><ruby>道<rt>みち</rt></ruby>こそなけれ<br><ruby>思<rt>おも</rt></ruby>ひ<ruby>入<rt>い</rt></ruby>る",
+    "first":"<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>よ<br><ruby>道<rt>みち</rt></ruby>こそなけれ<br><ruby>思<rt>おも</rt></ruby><ruby>ひ<rt>い</rt></ruby><ruby>入<rt>い</rt></ruby>る",
     "second":"<ruby>山<rt>やま</rt></ruby>の<ruby>奥<rt>おく</rt></ruby>にも<br><ruby>鹿<rt>しか</rt></ruby>ぞ<ruby>鳴<rt>な</rt></ruby>くなる",
     "name":"<ruby>皇太后宮大夫俊成<rt>こうたいごうぐうのだいぶしゅんぜい</rt></ruby>",
     "nameKana":"こうたいごうぐうのだいぶしゅんぜい",
@@ -1162,7 +1162,7 @@
   },
   "84":{
     "number":"84",
-    "first":"<ruby>長<rt>なが</rt></ruby>らへば<br>またこのごろや<br>しのばれむ",
+    "first":"<ruby>長<rt>なが</rt></ruby>ら<ruby>へ<rt>え</rt></ruby>ば<br>またこのごろや<br>しのばれ<ruby>む<rt>ん</rt></ruby>",
     "second":"<ruby>憂<rt>う</rt></ruby>しと<ruby>見<rt>み</rt></ruby>し<ruby>世<rt>よ</rt></ruby>ぞ<br><ruby>今<rt>いま</rt></ruby>は<ruby>恋<rt>こい</rt></ruby>しき",
     "name":"<ruby>藤原清輔朝臣<rt>ふじわらのきよすけあそん</rt></ruby>",
     "nameKana":"ふじわらのきよすけあそん",
@@ -1176,8 +1176,8 @@
   },
   "85":{
     "number":"85",
-    "first":"<ruby>夜<rt>よ</rt></ruby>もすがら<br><ruby>物<rt>もの</rt></ruby><ruby>思<rt>おも</rt></ruby>ふころは<br><ruby>明<rt>あ</rt></ruby>けやらで",
-    "second":"<ruby>閨<rt>ねや</rt></ruby>のひまさへ<br>つれなかりけり",
+    "first":"<ruby>夜<rt>よ</rt></ruby>もすがら<br><ruby>物<rt>もの</rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby>ころは<br><ruby>明<rt>あ</rt></ruby>けやらで",
+    "second":"<ruby>閨<rt>ねや</rt></ruby>のひまさ<ruby>へ<rt>え</rt></ruby><br>つれなかりけり",
     "name":"<ruby>俊恵法師<rt>しゅんえほうし</rt></ruby>",
     "nameKana":"しゅんえほうし",
     "date":"1113年～没年不詳",
@@ -1190,7 +1190,7 @@
   },
   "86":{
     "number":"86",
-    "first":"<ruby>嘆<rt>なげ</rt></ruby>けとて<br><ruby>月<rt>つき</rt></ruby>やは<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby>はする",
+    "first":"<ruby>嘆<rt>なげ</rt></ruby>けとて<br><ruby>月<rt>つき</rt></ruby>やは<ruby>物<rt>もの</rt></ruby>を<br><ruby>思<rt>おも</rt></ruby><ruby>は<rt>わ</rt></ruby>する",
     "second":"かこち<ruby>顔<rt>がお</rt></ruby>なる<br>わが<ruby>涙<rt>なみだ</rt></ruby>かな",
     "name":"<ruby>西行法師<rt>さいぎょうほうし</rt></ruby>",
     "nameKana":"さいぎょうほうし",
@@ -1232,7 +1232,7 @@
   },
   "89":{
     "number":"89",
-    "first":"<ruby>玉<rt>たま</rt></ruby>の<ruby>緒<rt>お</rt></ruby>よ<br><ruby>絶<rt>た</rt></ruby>えなば<ruby>絶<rt>た</rt></ruby>えね<br>ながらへば",
+    "first":"<ruby>玉<rt>たま</rt></ruby>の<ruby>緒<rt>お</rt></ruby>よ<br><ruby>絶<rt>た</rt></ruby>えなば<ruby>絶<rt>た</rt></ruby>えね<br>ながら<ruby>へ<rt>え</rt></ruby>ば",
     "second":"<ruby>忍<rt>しの</rt></ruby>ぶることの<br><ruby>弱<rt>よわ</rt></ruby>りもぞする",
     "name":"<ruby>式子内親王<rt>しょくしないしんのう</rt></ruby>",
     "nameKana":"しょくしないしんのう",
@@ -1247,7 +1247,7 @@
   "90":{
     "number":"90",
     "first":"<ruby>見<rt>み</rt></ruby>せばやな<br><ruby>雄島<rt>おじま</rt></ruby>のあまの<br><ruby>袖<rt>そで</rt></ruby>だにも",
-    "second":"ぬれにぞぬれし<br><ruby>色<rt>いろ</rt></ruby>はかはらず",
+    "second":"ぬれにぞぬれし<br><ruby>色<rt>いろ</rt></ruby>はか<ruby>は<rt>わ</rt></ruby>らず",
     "name":"<ruby>殷富門院大輔<rt>いんぷもんいんのたいふ</rt></ruby>",
     "nameKana":"いんぷもんいんのたいふ",
     "date":"生没年不詳",
@@ -1261,7 +1261,7 @@
   "91":{
     "number":"91",
     "first":"きりぎりす<br><ruby>鳴<rt>な</rt></ruby>くや<ruby>霜夜<rt>しもよ</rt></ruby>の<br>さむしろに",
-    "second":"<ruby>衣<rt>ころも</rt></ruby>かたしき<br>ひとりかも<ruby>寝<rt>ね</rt></ruby>む",
+    "second":"<ruby>衣<rt>ころも</rt></ruby>かたしき<br>ひとりかも<ruby>寝<rt>ね</rt></ruby><ruby>む<rt>ん</rt></ruby>",
     "name":"<ruby>後京極摂政前太政大臣<rt>ごきょうごくせっしょうさきのだいじょうだいじん</rt></ruby>",
     "nameKana":"<span style='font-size:14px;'>ごきょうごくせっしょうさきのだいじょうだいじん</span>",
     "date":"1169年～1206年",
@@ -1316,7 +1316,7 @@
   },
   "95":{
     "number":"95",
-    "first":"おほけなく<br>うき<ruby>世<rt>よ</rt></ruby>の<ruby>民<rt>たみ</rt></ruby>に<br>おほふかな",
+    "first":"お<ruby>ほ<rt>お</rt></ruby>けなく<br>うき<ruby>世<rt>よ</rt></ruby>の<ruby>民<rt>たみ</rt></ruby>に<br>お<ruby>ほ<rt>お</rt></ruby><ruby>ふ<rt>う</rt></ruby>かな",
     "second":"わがたつ<ruby>杣<rt>そま</rt></ruby>に<br><ruby>墨染<rt>すみぞめ</rt></ruby>の<ruby>袖<rt>そで</rt></ruby>",
     "name":"<ruby>前大僧正慈円<rt>さきのだいそうじょうじえん</rt></ruby>",
     "nameKana":"さきのだいそうじょうじえん",
@@ -1330,7 +1330,7 @@
   },
   "96":{
     "number":"96",
-    "first":"<ruby>花<rt>はな</rt></ruby>さそふ<br><ruby>嵐<rt>あらし</rt></ruby>の<ruby>庭<rt>にわ</rt></ruby>の<br><ruby>雪<rt>ゆき</rt></ruby>ならで",
+    "first":"<ruby>花<rt>はな</rt></ruby>さそ<ruby>ふ<rt>う</rt></ruby><br><ruby>嵐<rt>あらし</rt></ruby>の<ruby>庭<rt>にわ</rt></ruby>の<br><ruby>雪<rt>ゆき</rt></ruby>ならで",
     "second":"ふりゆくものは<br>わが<ruby>身<rt>み</rt></ruby>なりけり",
     "name":"<ruby>入道前太政大臣<rt>にゅうどうさきのだいじょうだいじん</rt></ruby>",
     "nameKana":"にゅうどうさきのだいじょうだいじん",
@@ -1372,12 +1372,12 @@
   },
   "99":{
     "number":"99",
-    "first":"<ruby>人<rt>ひと</rt></ruby>もをし<br><ruby>人<rt>ひと</rt></ruby>もうらめし<br>あぢきなく",
-    "second":"<ruby>世<rt>よ</rt></ruby>を<ruby>思<rt>おも</rt></ruby>ふゆゑに<br><ruby>物<rt>も</rt></ruby><ruby>思<rt>おも</rt></ruby>ふ<ruby>身<rt>み</rt></ruby>は",
+    "first":"<ruby>人<rt>ひと</rt></ruby>もをし<br><ruby>人<rt>ひと</rt></ruby>もうらめし<br>あ<ruby>ぢ<rt>じ</rt></ruby>きなく",
+    "second":"<ruby>世<rt>よ</rt></ruby>を<ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby>ゆ<ruby>ゑ<rt>え</rt></ruby>に<br><ruby>物<rt>も</rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>ふ<rt>う</rt></ruby><ruby>身<rt>み</rt></ruby>は",
     "name":"<ruby>後鳥羽院<rt>ごとばいん</rt></ruby>",
     "nameKana":"ごとばいん",
     "date":"1180年～1239年",
-    "yomihuda":"ひともをし<br>ひともうらめし<br>あぢきなく<br>よをおもふゆ<ruby>ゑ<rt>え</rt></ruby>に<br>ものおもふみは",
+    "yomihuda":"ひともをし<br>ひともうらめし<br>あぢきなく<br>よをおもふゆゑえに<br>ものおもふみは",
     "torihuda":"よをおもふゆゑにものおもふみは",
     "theme":"misc",
     "translation":"思うようにならずに世の中がつまらなく感じるがゆえに物思いにふける私は、あるときは人が愛しく、あるときは人が恨めしく感じられる。",
@@ -1387,7 +1387,7 @@
   "100":{
     "number":"100",
     "first":"ももしきや<br>ふるき<ruby>軒<rt>のき</rt></ruby>ばの<br>しのぶにも",
-    "second":"なほあまりある<br><ruby>昔<rt>むかし</rt></ruby>なりけり",
+    "second":"な<ruby>ほ<rt>お</rt></ruby>あまりある<br><ruby>昔<rt>むかし</rt></ruby>なりけり",
     "name":"<ruby>順徳院<rt>じゅんとくいん</rt></ruby>",
     "nameKana":"じゅんとくいん",
     "date":"1197年～1242年",
