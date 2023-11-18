@@ -117,6 +117,37 @@ jsonSelector.addEventListener("change", () => {
       <img src="../img/${number}.svg" alt="${name}">
       `);
 
+// ---------------------------------------------------
+// ひらがなトグルボタンについて
+// ---------------------------------------------------
+
+// スマホのチェックボックスのスワイプ対応ここから
+      $(document).ready(function () {
+        // チェックボックス要素
+        let checkbox = $(".checkbox");
+    
+        // タッチ開始座標
+        let startX;
+    
+        // タッチ開始時の処理
+        checkbox.on("touchstart", function (e) {
+          startX = e.originalEvent.touches[0].clientX;
+        });
+    
+        // タッチ終了時の処理
+        checkbox.on("touchend", function (e) {
+          var endX = e.originalEvent.changedTouches[0].clientX;
+          var deltaX = endX - startX;
+    
+          // スワイプ距離が一定以上ならチェックを切り替える
+          if (Math.abs(deltaX) > 5) {
+            checkbox.prop("checked", !checkbox.prop("checked")).change();
+          }
+        });
+      });
+// スマホのチェックボックスのスワイプ対応ここまで
+
+
       // チェックボックスの変更時にコンテンツを即座に更新
       $('#toggle').on('change', function () {
         updatePoemContent();
@@ -416,14 +447,3 @@ $(function () {
     return false;
   });
 });
-
-
-
-
-      
-
-    
-    
-    
-    
-    
