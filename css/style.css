@@ -162,17 +162,43 @@ option {
 main {
   background-image: url(../img/tatami.webp);
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6em;
-  padding: 1em;
+  display: grid;
+  grid-template: "checkbox checkbox" "card makimono";
+  gap: 0 50px;
+  padding: 3em;
 }
 @media screen and (max-width: 960px) {
   main {
-    padding: 1em;
-    flex-direction: column;
-    gap: 1em;
+    grid-template: "checkbox" "card" "makimono";
+  }
+}
+
+.card {
+  grid-area: card;
+  display: flex;
+  justify-content: end;
+  margin-right: 60px;
+}
+@media (max-width: 960px) {
+  .card {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.makimono {
+  grid-area: makimono;
+  display: flex;
+  justify-content: start;
+}
+@media (max-width: 960px) {
+  .makimono {
+    justify-content: center;
   }
 }
 
@@ -407,8 +433,7 @@ main {
 }
 
 .card-front rt {
-  font-size: 0.8rem;
-  letter-spacing: -0.3em;
+  display: none;
 }
 @media (max-width: 960px) {
   .card-front rt {
@@ -541,6 +566,7 @@ dd rt {
   background-size: auto;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+  margin-top: 70px;
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
 }
@@ -685,21 +711,23 @@ footer p {
 スマホ用の平仮名トグルボタン
 --------------------------- */
 .checkbox {
+  grid-area: checkbox;
   height: 50px;
-  width: 300px;
+  margin-bottom: 20px;
+  width: 380px;
   background: #f9edca;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid #4e3052;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   font-size: 1.1rem;
 }
-@media (min-width: 960px) {
+@media (max-width: 960px) {
   .checkbox {
-    display: none;
+    width: 300px;
   }
 }
 .checkbox label {

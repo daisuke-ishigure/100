@@ -143,18 +143,44 @@ option {
 -------------------------------------------- */
 main {
   background-image: url(../img/tatami.webp);
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6em;
-  padding: 1em;
+  flex-grow:1;
+  display: grid;
+  grid-template:
+    "checkbox checkbox"
+    "card makimono";
+  gap: 0 50px; 
+  padding:3em;
+
   @media screen and (max-width: 960px) {
-    padding: 1em;
-    flex-direction: column;
-    gap: 1em;
+    grid-template:
+      "checkbox"
+      "card"
+      "makimono";
   }
 }
+.card{
+  grid-area:card;
+  display:flex;
+  justify-content:end;
+  margin-right:60px;
+  @media (max-width:960px){
+    margin-right:0;
+    justify-content: center;
+  }
+}
+.column-wrapper{
+  display:flex;
+  flex-direction:column;
+}
+.makimono{
+  grid-area:makimono;
+  display: flex;
+  justify-content: start;
+  @media (max-width:960px){
+    justify-content: center;
+  }
+}
+
 /* sp-menu */
 #sp-menu{
   position:absolute;
@@ -368,8 +394,9 @@ main {
 }
 
 .card-front rt {
-  font-size: 0.8rem;
-  letter-spacing: -0.3em;
+  // font-size: 0.8rem;
+  // letter-spacing: -0.3em;
+  display:none;
   @media (max-width:960px){
     display:none;
   }
@@ -482,6 +509,7 @@ dd rt {
   background-size: auto;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+  margin-top:70px;
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
@@ -539,19 +567,7 @@ footer {
     background-size:10%;
   }
 }
-// footer ul{
-//   font-family:"noto-sans-pro", sans-serif;
-//   font-size:0.7rem;
-//   color:#fff;
-//   display:flex;
-//   justify-content: center;
-//   gap:20px;
-//   margin-bottom:10px;
-// }
-// footer .material-symbols-outlined{
-//   font-size:1rem;
-//   transform:translateY(0px);
-// }
+
 footer p {
   color: #fff;
   text-shadow:0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,0px 0px 3px #4e3052,;
@@ -623,19 +639,21 @@ footer p {
 スマホ用の平仮名トグルボタン
 --------------------------- */
 .checkbox{
+  grid-area:checkbox;
   height:50px;
-  width:300px;
+  margin-bottom:20px;
+  width:$pcCardWidth;
   background:#f9edca;
   display:flex;
-  gap:10px;
+  gap:20px;
   align-items:center;
   justify-content:center;
-  padding:20px;
+  padding:  10px;
   border:2px solid #4e3052;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   font-size:1.1rem;
-  @media(min-width:960px){
-    display:none; 
+  @media(max-width:960px){
+    width:$spCardWidth;
   }
   label{
     color:#333;
