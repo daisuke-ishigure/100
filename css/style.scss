@@ -346,9 +346,12 @@ main {
 .card-front dl {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: row-reverse;
   user-select: none;
+  @media (max-width:960px){
+    gap:10px;
+  }
 }
 .card-front dl dt {
   writing-mode: vertical-rl;
@@ -517,6 +520,7 @@ dd rt {
     width: $spCardWidth + 10px;
     height: $spCardHeight + 60px;
     padding: 30px;
+    margin-top:20px;
   }
 }
 
@@ -678,7 +682,8 @@ footer p {
       background:#b82343;
       border-radius:50%;
       transform:scale(0.85);
-      transition:0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      // transition:0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition:0.2s ;
     }
     &:checked::before{
       left:30px;
