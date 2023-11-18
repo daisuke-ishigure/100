@@ -52,34 +52,41 @@
       <div id="table"></div>
     </div>
 
-    <!-- 平仮名表記トグル -->
-    <div class="checkbox">
-      <label for="checkbox">漢字表示</label>
-      <input type="checkbox" id="toggle">
-      <label for="checkbox">ひらがな表示</label>
-    </div>
 
-    <!-- カード -->
-    <div class="card-item">
-      <div class="card-front">
-        <div class="initial-setting">
-          <h3>絵札</h3>
-          <p>こちらには絵札が表示されます。<br>クリックすると歌の意味が表示されます。</p>
+
+    <div class="card">
+      <div class="coumn-wrapper">
+        <!-- 平仮名表記トグル -->
+        <div class="checkbox">
+          <label for="checkbox">漢字表示</label>
+          <input type="checkbox" id="toggle">
+          <label for="checkbox">ひらがな表示</label>
+        </div>
+        <!-- カード -->
+        <div class="card-item">
+          <div class="card-front">
+            <div class="initial-setting">
+              <h3>絵札</h3>
+              <p>こちらには絵札が表示されます。<br>クリックすると歌の意味が表示されます。</p>
+            </div>
+          </div>
+          <div class="card-back"></div>
+          <div id="next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+          <div id="back"><span class="material-symbols-outlined">arrow_back_ios_new</span></div>
+        </div>
+        </div>
+      </div><!-- '.card-itemここまで' -->
+      <div class="makimono">
+        <!-- 巻き物 -->
+        <div class="explanation">
+          <div class="initial-setting">
+            <h3>説明</h3>
+            <p>こちらには歌の補足説明と<br>歌人についての説明が表示されます。</p>
+          </div>
         </div>
       </div>
-      <div class="card-back"></div>
-      <div id="next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
-      <div id="back"><span class="material-symbols-outlined">arrow_back_ios_new</span></div>
-    </div><!-- '.card-itemここまで' -->
-    
-    <!-- 巻き物 -->
-    <div class="explanation">
-      <div class="initial-setting">
-        <h3>説明</h3>
-        <p>こちらには歌の補足説明と<br>歌人についての説明が表示されます。</p>
-      </div>
-    </div>
-    <p id="page-top"><a href="#">上へ戻る</a></p>
+
+      <p id="page-top"><a href="#">上へ戻る</a></p>
   </main>
   <!-- メインここまで・フッターここから -->
   <footer>
