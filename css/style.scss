@@ -12,6 +12,10 @@ $spCardHeight: 434px;
   box-sizing: border-box;
   transition: 0.5s;
 }
+input, select {
+  -webkit-appearance: none;
+  appearance: none;
+}
 img {
   height: auto;
   vertical-align: bottom;
@@ -31,6 +35,13 @@ html {
     touch-action: manipulation;
   }
 }
+
+
+
+
+
+
+
 body {
   font-family: "Kaisei HarunoUmi", serif;
   line-height: 1.5;
@@ -83,6 +94,7 @@ body {
 }
 .select-container .selector {
   height: 30px;
+  padding-left:6px;
 }
 #themeSelector {
   width: 8em;

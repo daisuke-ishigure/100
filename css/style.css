@@ -8,6 +8,12 @@
   transition: 0.5s;
 }
 
+input, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
 img {
   height: auto;
   vertical-align: bottom;
@@ -91,6 +97,7 @@ body {
 
 .select-container .selector {
   height: 30px;
+  padding-left: 6px;
 }
 
 #themeSelector {
