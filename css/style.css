@@ -173,10 +173,12 @@ main {
   grid-template: "checkbox checkbox" "card makimono";
   gap: 0 50px;
   padding: 3em;
+  padding: 1em;
 }
 @media screen and (max-width: 960px) {
   main {
     grid-template: "checkbox" "card" "makimono";
+    padding: 1em;
   }
 }
 
@@ -578,7 +580,7 @@ dd rt {
   background-size: auto;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  margin-top: 70px;
+  margin-top: 60px;
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
 }
@@ -726,7 +728,7 @@ footer p {
 .checkbox {
   grid-area: checkbox;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 380px;
   background: #f9edca;
   display: flex;
@@ -741,6 +743,7 @@ footer p {
 @media (max-width: 960px) {
   .checkbox {
     width: 300px;
+    margin-bottom: 5px;
   }
 }
 .checkbox label {

@@ -168,7 +168,9 @@ main {
       "checkbox"
       "card"
       "makimono";
+      padding:1em;
   }
+  padding:1em;
 }
 .card{
   grid-area:card;
@@ -524,7 +526,7 @@ dd rt {
   background-size: auto;
   background-repeat: no-repeat;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  margin-top:70px;
+  margin-top:60px;
   padding: 35px 35px 30px 35px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
@@ -657,7 +659,7 @@ footer p {
 .checkbox{
   grid-area:checkbox;
   height:50px;
-  margin-bottom:20px;
+  margin-bottom:10px;
   width:$pcCardWidth;
   background:#f9edca;
   display:flex;
@@ -670,6 +672,7 @@ footer p {
   font-size:1.1rem;
   @media(max-width:960px){
     width:$spCardWidth;
+    margin-bottom:5px;
   }
   label{
     color:#333;
