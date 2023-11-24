@@ -37,11 +37,6 @@ html {
 }
 
 
-
-
-
-
-
 body {
   font-family: "Kaisei HarunoUmi", serif;
   line-height: 1.5;
@@ -67,10 +62,9 @@ body {
   background-position:20px 60px;
   @media screen and (max-width: 960px) {
     min-height: 100px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.25em;
-    padding: 2em 0;
+    flex-direction:column;
+    gap: 0em;
+    padding: 2em 3em;
     background-size:10%;
   }
 }
@@ -82,73 +76,67 @@ body {
   margin-bottom: 5px;
   cursor: pointer;
   @media screen and (max-width: 960px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
-/* セレクター */
-.select-container {
-  display: flex;
-  gap: 1em;
-  line-height: 100px;
-}
-.select-container .selector {
-  height: 30px;
-  padding-left:6px;
-}
-#themeSelector {
-  width: 8em;
-  font-size: 16px !important;
-  @media screen and (max-width: 960px) {
-    width: 5em;
-    font-size: 14px;
+#burger{
+  position:relative;
+  text-shadow:0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff;
+  @media (max-width:960px){
+    font-size:1.2rem;
   }
 }
-#jsonSelector {
-  width: 16em;
-  font-size: 16px !important;
-  @media screen and (max-width: 960px) {
-    width: 12em;
-    font-size: 14px;
-  }
+#search-icon{
+  position:absolute;
+  top:1px;
+  left:-29px;
 }
-option {
-  font-size: 1rem;
-}
-#burger {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #333;
-  background: #fff;
-  position: relative;
 
-  span {
-    position: absolute;
-    height: 2px;
-    width: 80%;
-    inset: 0;
-    margin: auto;
-    background-color: #333;
-    transition: 0.3s;
-    &:nth-child(1) {
-      top: -40%;
-    }
-    &:nth-child(3) {
-      top: 40%;
-    }
-  }
-}
-#burger.active span:nth-child(1) {
-  top: 0%;
-  transform: rotate(45deg);
-}
-#burger.active span:nth-child(2) {
-  opacity: 0;
-}
-#burger.active span:nth-child(3) {
-  top: 0%;
-  transform: rotate(-45deg);
-}
+// #burger {
+//   width: 30px;
+//   height: 30px;
+//   border: 1px solid #333;
+//   background: #fff;
+//   position: relative;
+//   transform:translateX(-30px);
+//   &::before{
+//     position:absolute;
+//     left:-80px;
+//     content:'歌を検索';
+//     text-shadow:0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff,0px 0px 3px #fff;
+//     @media (max-width:960px){
+//       font-size:1.2rem;
+//     }
+//   }
+
+//   span {
+//     position: absolute;
+//     height: 2px;
+//     width: 80%;
+//     inset: 0;
+//     margin: auto;
+//     background-color: #333;
+//     transition: 0.3s;
+//     &:nth-child(1) {
+//       top: -40%;
+//     }
+//     &:nth-child(3) {
+//       top: 40%;
+//     }
+//   }
+// }
+// #burger.active span:nth-child(1) {
+//   top: 0%;
+//   transform: rotate(45deg);
+// }
+// #burger.active span:nth-child(2) {
+//   opacity: 0;
+// }
+// #burger.active span:nth-child(3) {
+//   top: 0%;
+//   transform: rotate(-45deg);
+// }
 
 /* --------------------------------------------
 メイン
@@ -162,7 +150,10 @@ main {
     "card makimono";
   gap: 0 50px; 
   padding:3em;
-
+  @media screen and (max-width: 1150px) {
+    padding-right:1em;
+    gap:1em;
+  }
   @media screen and (max-width: 960px) {
     grid-template:
       "checkbox"
@@ -182,10 +173,7 @@ main {
     justify-content: center;
   }
 }
-.column-wrapper{
-  display:flex;
-  flex-direction:column;
-}
+
 .makimono{
   grid-area:makimono;
   display: flex;
@@ -326,37 +314,11 @@ main {
   border-radius: 2px;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
   border: 15px solid #4e3052;
-  background-color: #f9edca;
   background-image: url(../img/huda.webp);
   backface-visibility: hidden; /* 裏面を隠す */
   position: relative;
 }
-.initial-setting {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  width: 100%;
-  height: 100%;
-  gap: 10px;
-}
-.initial-setting h3 {
-  font-size: 1.4rem;
-  writing-mode: vertical-rl;
-  width: fit-content;
-  height: fit-content;
-  padding: 1em 0.1em 1em 0;
-  background-color: #b82343;
-  color: #fff;
-}
-.initial-setting p {
-  width: fit-content;
-  padding-top: 2.5em;
-  height: 100%;
-  writing-mode: vertical-rl;
-  font-family: "noto-sans-pro", sans-serif;
-  font-size: 1.2rem;
-  line-height: 2;
-}
+
 .card-front dl {
   width: 100%;
   display: flex;
@@ -404,6 +366,9 @@ main {
     line-height: 1.95;
   }
 }
+
+
+
 .card-front ruby {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -442,8 +407,28 @@ dd rt {
   transform: rotateY(-180deg);
   backface-visibility: hidden; /* 裏面を隠す */
   border: 15px solid #4e3052;
-  background-color: #f9edca;
+  background-image: url(../img/huda.webp);
   background-size: cover;
+  padding:2em 1em 0;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  @media (max-width:960px){
+    padding:1em 1em 0;
+  }
+  p{
+    writing-mode:vertical-rl;
+    font-size:3.4em;
+    line-height: 1.8;
+    letter-spacing: 2.7rem;
+    height:fit-content;
+    text-align:justify;
+    transform:translate(-0.05em ,0.15em);
+    @media (max-width:960px){
+      letter-spacing: 2rem;
+      transform:translate(-0.1em,0);
+    }
+  }
 }
 /* クリックしたときの動作 表*/
 .card-item.active .card-front {
@@ -454,36 +439,16 @@ dd rt {
   transform: rotateY(0);
 }
 
-.card-back dl {
-  width: 100%;
-  height: 100%;
-  padding: 15% 0 10% 0;
-  display: flex;
-  gap: 10px;
-  flex-direction: row-reverse;
-  justify-content: center;
-  user-select: none;
-}
-.card-back dl dt {
-  writing-mode: vertical-rl;
-  font-size: 1.4rem;
-  height: fit-content;
-  padding: 0.5em 0.1em 0.5em 0;
-  background-color: #b82343;
-  color: #fff;
-}
-.card-back dl dd {
-  margin-top: 2em;
-  writing-mode: vertical-rl;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.3rem;
-  line-height: 2;
-  letter-spacing: 0.08em;
-}
+
+
 
 /* 矢印 */
 #next,
 #back {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -55px;
   display: block;
   height: 50px;
   width: 50px;
@@ -492,10 +457,6 @@ dd rt {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -55px;
   font-size: 1rem;
   user-select: none;
   color: #fff;
@@ -518,24 +479,27 @@ dd rt {
   cursor: pointer;
 }
 
+
+
 /* -----巻き物：補足説明----- */
 .explanation {
-  width: $pcCardWidth;
-  height: $pcCardHeight;
-  background-image: url(../img/makimono.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  margin-top:60px;
-  padding: 35px 35px 30px 35px;
+  width: 500px;
+  max-height: 790px;
+  background-color:#f7f1e0;
+  opacity:0.9;
+  padding: 20px;
   font-family: "noto-sans-jp", sans-serif;
   @media screen and (max-width: 960px) {
-    background-image: url(../img/makimono_02.svg);
-    width: $spCardWidth + 10px;
-    height: $spCardHeight + 60px;
-    padding: 30px;
+    width: $spCardWidth ;
+    min-height: fit-content;
+    max-height:2000px;
+    padding: 15px;
     margin-top:20px;
   }
+}
+.explanation dl:not(:last-child){
+  border-bottom: 1px solid #4e3052;
+  padding-bottom: 15px;
 }
 
 .explanation dt {
@@ -543,26 +507,27 @@ dd rt {
   font-size: 1.3rem;
   margin-bottom: 0.3em;
   width: fit-content;
-  background: #b82343;
-  color: #fff;
-  padding: 2px 8px;
+  border-left:5px solid #b82343;
+  color: #333;
+  padding: 0 6px;
   @media screen and (max-width: 960px) {
     font-size: 1.3rem;
   }
 }
-.explanation dl:nth-child(2) > dt {
+.explanation dl:nth-child(n+2) > dt {
   margin-top: 0.8em;
 }
+
 .explanation dd {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.75;
   letter-spacing: 0.05em;
   rt{
     letter-spacing:0;
   }
   @media screen and (max-width: 960px) {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
   }
 }
 
@@ -653,35 +618,118 @@ footer p {
   opacity: .5;
 }
 
+
+
+/* ---------------------------
+テーマ・歌人セレクター
+--------------------------- */
+
+.select-container{
+  background-color:#f7f1e0;
+  opacity:0.9;
+  padding:1em;
+  margin-bottom:10px;
+  position:relative;
+  height:230px;
+
+.selector {
+  height: 50px;
+  padding-left:6px;
+  display:block;
+}
+#themeSelector {
+  height:50px;
+  font-size:1.1rem;
+  width:300px;
+  transform:translateX(30px);
+  margin-bottom:5px;
+  @media screen and (max-width: 960px) {
+    width:240px;
+  }
+}
+  @media screen and (max-width: 960px) {
+    font-size: 14px;
+    width:$spCardWidth;
+  }
+}
+#jsonSelector {
+  margin-bottom:10px;
+  width:300px;
+  transform:translateX(30px);
+  font-size:1.1rem;
+  z-index:2;
+  @media screen and (max-width: 960px) {
+    font-size: 14px;
+    width:240px;
+  }
+}
+option {
+  font-size: 1rem;
+}
+
+#line{
+  position:absolute;
+  width:23px;
+  height:56px;
+  top:41px;
+  left:24px;
+  @media (max-width:960px){
+    width:22px;
+    left:22px;
+  }
+}
 /* ---------------------------
 スマホ用の平仮名トグルボタン
 --------------------------- */
-.checkbox{
-  grid-area:checkbox;
-  height:50px;
-  margin-bottom:10px;
-  width:$pcCardWidth;
-  background:#f9edca;
+.checkbox1{
+  height:40px;
   display:flex;
-  gap:20px;
   align-items:center;
   justify-content:center;
-  padding:  10px;
-  border:2px solid #4e3052;
-  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   font-size:1.1rem;
   @media(max-width:960px){
-    width:$spCardWidth;
     margin-bottom:5px;
   }
-  label{
-    color:#333;
-    font-family:"noto-sans-pro", sans-serif;
+}
+  .checkbox2{
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.1rem;
+    @media(max-width:960px){
+      margin-bottom:5px;
+    }
   }
-  input{
+
+  input#toggle3{
+    position:relative;
+    height:30px;
+    width:30px;
+    background: #e6e6e6;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    margin-right:10px;
+    &::before{
+      height:20px;
+      width:14px;
+      position:absolute;
+      left:0;
+      content:"";
+      border-right: 5px solid #b82343;
+      border-bottom: 5px solid #b82343;
+      transform: rotate(45deg) translate(4px ,-5px);
+      transition:0.2s ;
+    }
+    &:checked::before{
+      display:none;
+    }
+  }
+
+  input#toggle2{
     position:relative;
     height:30px;
     width:60px;
+    margin:0 10px;
     background: #e6e6e6;
     -webkit-appearance: none;/* 要素がブラウザのデフォルトの外観を持たないように指定 */
     -moz-appearance: none;
@@ -704,4 +752,3 @@ footer p {
       left:30px;
     }
   }
-}
